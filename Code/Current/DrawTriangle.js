@@ -29,7 +29,8 @@ window.onload = function init() {
 			// Do shader plumbing
 			// This single shader is used for multiple drawings.
 			var vPosition = gl.getAttribLocation(program, "vPosition"); //"vPosition" is a variable inside the GPU.
-			console.log(vPosition);
+			console.log(vPosition); // 0?????
+			
 			gl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0); //2 notes that this is a xy coordinate
 			gl.enableVertexAttribArray(vPosition);// This single shader is used for multiple drawings.
 			
