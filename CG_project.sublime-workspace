@@ -1,0 +1,2239 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"class",
+				"class\tAttr"
+			],
+			[
+				"con",
+				"controller\tAngularJS"
+			],
+			[
+				"activ",
+				"activeTabIdx"
+			],
+			[
+				"temp",
+				"template-headline"
+			],
+			[
+				"angu",
+				"angular\tAngularJS"
+			],
+			[
+				"rep",
+				"ng-repeat-end\tAngularJS"
+			],
+			[
+				"repe",
+				"ng-repeat-start\tAngularJS"
+			],
+			[
+				"src",
+				"ng-src\tAngularJS"
+			],
+			[
+				"switch",
+				"ng-switch\tAngularJS"
+			],
+			[
+				"swithc",
+				"ng-switch-default\tAngularJS"
+			],
+			[
+				"style",
+				"ng-style\tAngularJS"
+			],
+			[
+				"localsto",
+				"localstorage"
+			],
+			[
+				"localst",
+				"localstorage\t(?)"
+			],
+			[
+				"local",
+				"localStorage\t(?)"
+			],
+			[
+				"fea",
+				"feature_map\t{}"
+			],
+			[
+				"proto",
+				"prototype"
+			],
+			[
+				"stora",
+				"storageArr\t[]"
+			],
+			[
+				"sujin",
+				"sujin_string\t(str)"
+			],
+			[
+				"get",
+				"getItem\t(?)"
+			],
+			[
+				"str",
+				"storage\t(?)"
+			],
+			[
+				"view",
+				"view_url\t(str)"
+			],
+			[
+				"e",
+				"center"
+			],
+			[
+				"f",
+				"flex-end"
+			],
+			[
+				"a",
+				"baseline"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"alig",
+				"vertical-align"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"sound",
+				"soundEffect\t(?)"
+			],
+			[
+				"ro",
+				"rotate3d()"
+			],
+			[
+				"fw",
+				"fw-b\tfont-weight: bold;"
+			],
+			[
+				"c",
+				"css.js"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"trans",
+				"translateX()"
+			],
+			[
+				"sp",
+				"space-around"
+			],
+			[
+				"j",
+				"jc-fe\tjustify-content: flex-end;"
+			],
+			[
+				"lo",
+				"localjqueryHTML"
+			],
+			[
+				"re",
+				"Resources/"
+			],
+			[
+				"prot",
+				"prototype\t{}"
+			],
+			[
+				"conver",
+				"convertArrayWrapper"
+			],
+			[
+				"day",
+				"dayOfWeek\t(num)"
+			],
+			[
+				"da",
+				"dayOfWeek\t(num)"
+			],
+			[
+				"coun",
+				"countDown(target_number)"
+			],
+			[
+				"count",
+				"countDownInner(count)"
+			],
+			[
+				"cur",
+				"cur-p\tcursor: pointer;"
+			],
+			[
+				"node",
+				"nodeType"
+			],
+			[
+				"non",
+				"None\tinstance"
+			],
+			[
+				"total",
+				"totalRibbon\tstatement"
+			],
+			[
+				"dim",
+				"dimensions\tstatement"
+			],
+			[
+				"inpu",
+				"inputStr\tstatement"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"moda",
+				"modal_list"
+			],
+			[
+				"s",
+				"space-around"
+			],
+			[
+				"car",
+				"carousel_img_list"
+			],
+			[
+				"modal",
+				"modal_list"
+			],
+			[
+				"bt",
+				"btn_o"
+			],
+			[
+				"conte",
+				"context_node"
+			],
+			[
+				"remo",
+				"removeChild"
+			],
+			[
+				"inser",
+				"insertBefore"
+			],
+			[
+				"pla",
+				"placeholder\tAttr"
+			],
+			[
+				"_",
+				"_reset.scss"
+			],
+			[
+				"ai",
+				"ai-c\talign-items: center;"
+			],
+			[
+				"bgsz",
+				"bgsz-ct\tbackground-size: contain;"
+			],
+			[
+				"ta-",
+				"ta-j\ttext-align: justify;"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"remov",
+				"removeParent"
+			],
+			[
+				"insert",
+				"insertAfter"
+			],
+			[
+				"quer",
+				"queryAll"
+			],
+			[
+				"mo",
+				"modal_list"
+			],
+			[
+				"mod",
+				"modal_desc"
+			],
+			[
+				"crea",
+				"createTextNode"
+			],
+			[
+				"mad",
+				"made_ul_li\t(?)"
+			],
+			[
+				"q",
+				"q-en\tquotes: '\\201C' '\\201D' '\\2018' '\\2019';"
+			],
+			[
+				"in",
+				"innerHTML"
+			],
+			[
+				"inner",
+				"innerHTML"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"gete",
+				"getElementsByTagName"
+			],
+			[
+				"dco",
+				"Document"
+			],
+			[
+				"scro",
+				"scrollY"
+			],
+			[
+				"on",
+				"oncanplay\tAttr"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"n",
+				"unset"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"mh",
+				"min-height"
+			],
+			[
+				"tran",
+				"translateX()"
+			],
+			[
+				"rot",
+				"rotateZ()"
+			],
+			[
+				"transfor",
+				"transform-origin"
+			],
+			[
+				"transfo",
+				"transform-origin"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"tra",
+				"translateX()"
+			],
+			[
+				"tr",
+				"translateX()"
+			],
+			[
+				"te",
+				"text-shadow"
+			],
+			[
+				"outline",
+				"outline"
+			],
+			[
+				"text-de",
+				"text-decoration"
+			],
+			[
+				"col",
+				"colmc\tcolumn-count"
+			],
+			[
+				"transl",
+				"translateX()"
+			],
+			[
+				"pos",
+				"pos-f\tposition: fixed;"
+			],
+			[
+				"outlin",
+				"outline-style"
+			],
+			[
+				"outl",
+				"outline-style"
+			],
+			[
+				"tranfo",
+				"transform"
+			],
+			[
+				"text-decoration",
+				"text-decoration-style"
+			],
+			[
+				"heig",
+				"height"
+			],
+			[
+				"column-",
+				"column-width"
+			],
+			[
+				"column",
+				"column-count"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"gr",
+				"fluid-grid.css"
+			],
+			[
+				"pos-",
+				"pos-a\tposition: absolute;"
+			],
+			[
+				"rotat",
+				"rotateZ()"
+			],
+			[
+				"transf",
+				"transform"
+			],
+			[
+				"ini",
+				"Initialization/"
+			],
+			[
+				"trasn",
+				"transform"
+			],
+			[
+				"border-s",
+				"border-style"
+			],
+			[
+				"i",
+				"initial"
+			],
+			[
+				"w",
+				"w-a\twidth: auto;"
+			],
+			[
+				"bgcp",
+				"bgcp-cb\tbackground-clip: content-box;"
+			],
+			[
+				"res",
+				"ress.css"
+			],
+			[
+				"anim",
+				"anim-\tanimation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
+			],
+			[
+				"trasf",
+				"transform"
+			],
+			[
+				"sk",
+				"skewY()"
+			],
+			[
+				"transform",
+				"transform"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"bd",
+				"bdrs\tborder-radius"
+			],
+			[
+				"c-p",
+				"cur-p\tcursor: pointer;"
+			],
+			[
+				"ic",
+				"svg-icon-news.png\tw:16 h:16"
+			],
+			[
+				"t",
+				"table-cell"
+			],
+			[
+				"bdc",
+				"bdcl-c\tborder-collapse: collapse;"
+			],
+			[
+				"svg",
+				"svg-icon-storage .png\tw:14 h:16"
+			],
+			[
+				"inf",
+				"photo-Inf-02.png\tw:60 h:60"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Notes/Day 1, 2 catchup.md",
+			"settings":
+			{
+				"buffer_size": 5759,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Notes/Day 3 0905.md",
+			"settings":
+			{
+				"buffer_size": 1278,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Code/Current/DrawTriangle.html",
+			"settings":
+			{
+				"buffer_size": 1364,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\"use strict\";\nvar gl; // global variable\n\nwindow.onload = function init() {\n\t\t\t// Set up WebGL\n\t\t\tvar canvas = document.getElementById(\"gl-canvas\");\n\t\t\tgl = WebGLUtils.setupWebGL( canvas ); //gives access to drivers (GPU)\n\t\t\tif(!gl){alert(\"WebGL setup failed!\");}\n\t\t\t\n\t\t\t// gl.viewport( 0, 0, 1.5*canvas.width, 1.5*canvas.height );\n\n\t\t\t// Clear canvas\n\t\t\tgl.clearColor(51/255,51/255,51/255, 1.0);\n\t\t\tgl.clear(gl.COLOR_BUFFER_BIT);\n\t\t\t\n\t\t\t// Load shaders and initialize attribute buffers\n\t\t\tvar program = initShaders( gl, \"vertex-shader\", \"fragment-shader\" );\n\t\t\tgl.useProgram( program );\n\t\t\t\n\t\t\t// Load data into a buffer\n\t\t\tvar s = 0.4 / 2;\n\t\t\tvar squareVertices = [ s, s, -s, s, -s, -s, -s, -s, s, -s, s, s, ]; \n\t\t\t//clipping occurs on the right side because 1 is the limit\n\t\t\tvar vBuffer = gl.createBuffer(); // to put data into separate buffers, create separate buffers multiple times\n\t\t\tconsole.log(gl.ARRAY_BUFFER);\n\t\t\tgl.bindBuffer(gl.ARRAY_BUFFER, vBuffer); //binds vBuffer to gl.ARRAY_BUFFER\n\t\t\tgl.bufferData(gl.ARRAY_BUFFER, new Float32Array(squareVertices), gl.STATIC_DRAW);\n\t\t\t\n\t\t\t// Do shader plumbing\n\t\t\t// This single shader is used for multiple drawings.\n\t\t\tvar vPosition = gl.getAttribLocation(program, \"vPosition\"); //\"vPosition\" is a variable inside the GPU.\n\t\t\tconsole.log(vPosition); // 0?????\n\t\t\t\n\t\t\tgl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0); //2 notes that this is a xy coordinate\n\t\t\tgl.enableVertexAttribArray(vPosition);// This single shader is used for multiple drawings.\n\t\t\t\n\t\t\t//Draw a triangle\n\t\t\tgl.drawArrays(gl.TRIANGLES,0,6);   // note that the last argument is 3, not 1\n\t\t\t                                   // this draws the vertices in the buffer. \n\t\t\t\n\n\n\t\t\t//Draw a second shape\n\t\t\tvar triangleVertices = [ -1, 1, -1, -0.5, -0.5, 1 ]; \n\t\t\tvBuffer = gl.createBuffer(); \n\t\t\tgl.bindBuffer(gl.ARRAY_BUFFER, vBuffer);\n\t\t\tconsole.log(gl.ARRAY_BUFFER);\n\t\t\tgl.bufferData(gl.ARRAY_BUFFER, new Float32Array(triangleVertices), gl.STATIC_DRAW);\n\t\t\t\n\t\t\tvar vPosition = gl.getAttribLocation(program, \"vPosition\");\n\t\t\tgl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0);\n\t\t\tgl.enableVertexAttribArray(vPosition);\n\t\t\t\n\t\t\tgl.drawArrays(gl.TRIANGLES,0,3);\n\n};\n",
+			"file": "Code/Current/DrawTriangle.js",
+			"file_size": 2246,
+			"file_write_time": 131178996313944628,
+			"settings":
+			{
+				"buffer_size": 2205,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Code/Common/initShaders.js",
+			"settings":
+			{
+				"buffer_size": 1784,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++ Starting Kit/C++ - Starting Kit.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/User/C++ Starting Kit.sublime-build",
+					""
+				],
+				[
+					"Packages/User/C++ Starting Kit.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/User/C++ Starting Kit.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "tab",
+		"selected_items":
+		[
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"browser",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"key bind",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"set md",
+				"Set Syntax: Markdown"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"convert tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"brows",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"file",
+				"File: Duplicate"
+			],
+			[
+				"covert tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"set ",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"repl node",
+				"SublimeREPL: Node"
+			],
+			[
+				"openres",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"open",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"node",
+				"SublimeREPL: Node"
+			],
+			[
+				"find key map",
+				"Keymaps: Find a keymap for..."
+			],
+			[
+				"wrap tog",
+				"Word Wrap: Toggle"
+			],
+			[
+				"findkey",
+				"FindKeyConflicts: All Key Maps to Quick Panel"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"key c",
+				"Keymaps: Cheat Sheet"
+			],
+			[
+				"wrap to",
+				"Word Wrap: Toggle"
+			],
+			[
+				"key binding",
+				"Preferences: Key Bindings"
+			],
+			[
+				"KEYMAP",
+				"Keymaps: Find a keymap for..."
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"find",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"keybi",
+				"Preferences: Key Bindings"
+			],
+			[
+				"key bi",
+				"Preferences: Key Bindings"
+			],
+			[
+				"key bidn",
+				"Preferences: Alignment Key Bindings – User"
+			],
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"convert ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"renma",
+				"File: Rename"
+			],
+			[
+				"set mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"browse",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"repl run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"",
+				"Build With: C++ Single File"
+			],
+			[
+				"set pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"python run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"key bin",
+				"Preferences: SublimeInput Key Bindings – User"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"conver",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"brow",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"browesr",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"doc",
+				"DocBlockr: Reparse comment block"
+			],
+			[
+				"docbl",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"markdown",
+				"Set Syntax: MultiMarkdown"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"color helper",
+				"Color Helper: Show Color Picker"
+			],
+			[
+				"index",
+				"Color Helper: Index Colors in File"
+			],
+			[
+				"satisf",
+				"Package Control: Satisfy Dependencies"
+			],
+			[
+				"set javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"sort ",
+				"Sort Lines"
+			],
+			[
+				"gist",
+				"Gist: Insert Gist"
+			],
+			[
+				"resour",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"gi",
+				"Gist: Insert Gist"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"wrap too",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"user",
+				"Preferences: Settings - User"
+			],
+			[
+				"font",
+				"Set Syntax: Font"
+			],
+			[
+				"convert tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"set markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"fold",
+				"Code Folding: Unfold All"
+			],
+			[
+				"prod",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"to tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"set mard",
+				"Set Syntax: Markdown"
+			],
+			[
+				"set json",
+				"Set Syntax: JSON"
+			],
+			[
+				"prettif",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"auto",
+				"AutoFileName: Default Settings"
+			],
+			[
+				"sort l",
+				"Sort Lines"
+			],
+			[
+				"clone",
+				"Origami: Clone File to Pane on the Right"
+			],
+			[
+				"markdwon",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"resou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"bro",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rev",
+				"File: Reveal"
+			],
+			[
+				"resourc",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"open br",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"linekey bi",
+				"Preferences: SublimeInput Key Bindings – User"
+			],
+			[
+				"wor",
+				"Word Wrap: Toggle"
+			],
+			[
+				"reveal",
+				"File: Reveal"
+			],
+			[
+				"charset",
+				"Snippet: charset"
+			],
+			[
+				"projec",
+				"Project: Save As"
+			],
+			[
+				"color hel",
+				"Color Helper: Show Palettes"
+			],
+			[
+				"prettify",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"preveiw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"browsesr",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"zoom",
+				"Origami: Zoom Current Pane"
+			],
+			[
+				"origami",
+				"Origami: Zoom/Unzoom Current Pane (Toggle Zoom)"
+			],
+			[
+				"open bro",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"new file",
+				"File: New View into File"
+			],
+			[
+				"key ",
+				"HTMLPrettify: Set Keyboard Shortcuts"
+			],
+			[
+				"produc",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"produ",
+				"File: Open In Browser - Production Server"
+			],
+			[
+				"picker",
+				"Color Picker"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"colorpi",
+				"Color Picker"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"word r",
+				"Word Wrap: Toggle"
+			],
+			[
+				"bindin",
+				"Preferences: Key Bindings - Default"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"toggle li",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sublimeinp",
+				"SublimeInput: Build"
+			]
+		],
+		"width": 510.0
+	},
+	"console":
+	{
+		"height": 276.0,
+		"history":
+		[
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_get_color', {'settings': 'my_shared.sublime-settings', 'default_color': '#ff0000'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"print(settings.get('color_pick_return'))",
+			"sublime.run_command('color_pick_api_is_available', {'settings': 'my_shared.sublime-settings'})",
+			"settings.set('color_pick_return', None)",
+			"settings = sublime.load_settings('my_shared.sublime-settings')",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common"
+	],
+	"file_history":
+	[
+		"/C/Users/Simon/Downloads/rklab-handout/rktest.py",
+		"/C/Users/Simon/Downloads/Computer Graphics/Code/Common/README.txt",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-49-0901 Backend/Understanding-of-backend(day2).md",
+		"/C/Users/Simon/Downloads/BRM Project basic Process",
+		"/C/Users/Simon/Downloads/Concepts of Film and New Media/Week01 Reading the image (Cinema Paradiso)/[fmovies.to] Cinema Paradiso - Full.srt",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/radioClass.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826 AngularJS/angular-http.html",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/Clickable URLs/Default (Windows).sublime-keymap",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/ClickableUrls.sublime-settings",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826 AngularJS/onepiece.json",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826 AngularJS/angular-module.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826 AngularJS/angular-tabs.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826 AngularJS/js/controller.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826 AngularJS/angular-controller-and-module.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/demo-onepiece.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/try-demo-3.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/js/controller.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/demo-yamoo.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/params.json",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/try-demo.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/try-demo-2.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/directives.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/_NYUAD-colors.scss",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819 jQuery/jquery.html",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/snippets/HTML/jquery.sublime-snippet",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/js/jQuery.storageManager.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/angular.start.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/angular.html",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/snippets/HTML/angular.sublime-snippet",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/storage.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/js/storage.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax-random-users.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/random-users.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/DAY-48-0826/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/DAY-48-0826/storage.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/DAY-48-0826/js/storage.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/ajax.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/random-users.json",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data.xml",
+		"/E/Users/hp/Desktop/In Progress/GIT/Workshops/WebAPI_weather/script.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax-xml.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/ajax_tabs.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax_tabs.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax-comm.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data.txt",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_1.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_2.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_3.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_4.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/data/data.txt",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/data/data.json",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/ajax.xml",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/data/data.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/button.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/css.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/css.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/demo.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/test2.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819 jQuery/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/test.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/demo2.html",
+		"/C/Users/Simon/Desktop/test.js",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/repl.js",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/Regular Expressions/RegExp.sublime-syntax",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/Default.sublime-commands",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/Main.sublime-menu",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/ColorHelper/color_helper.sublime-settings",
+		"/C/Users/Simon/Documents/Front-End-WebDev/dfas.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/jquery-study.html",
+		"/C/Users/Simon/Downloads/detectizr.js",
+		"/C/Users/Simon/Downloads/modernizr-custom.js",
+		"/C/Users/Simon/Downloads/modernizr-custom (2).js",
+		"/C/Users/Simon/Downloads/modernizr-custom (3).js",
+		"/C/Users/Simon/Downloads/modernizr-custom (1).js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/jquery.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/jquery/src/queue.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.sass",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/PyV8/win64-p3/PyV8.py",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-32-0729/test.css",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-42-0816/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-41-0812/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/helper.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/button.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/num.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/buttons.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/README.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/button.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/date.js",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JavaScript/iife.sublime-snippet",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-34-0803/01-dom-js.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/functions.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/functions.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/jterm.md",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/01-font-size.html",
+		"/E/Users/hp/Desktop/In Progress/GIT/simonseo.kr.tn/_posts/2013-11-14-sample-2.md",
+		"/E/Users/hp/Desktop/In Progress/GIT/simonseo.kr.tn/_posts/2013-11-15-hello-world.md",
+		"/C/Users/Simon/Documents/Resources/helper.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/css/style.css",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/js/01-font-size.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/sass/_common.scss",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/sass/01-sign-up.sass",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/01-sign-up.html",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-38-0809/01-dom-review.html",
+		"/C/Users/Simon/Desktop/present_map.py",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/01-carousel.html",
+		"/C/Users/Simon/Desktop/elves.py",
+		"/C/Users/Simon/Desktop/present_map.txt",
+		"/C/Users/Simon/Desktop/elves.txt",
+		"/C/Users/Simon/Desktop/santafloor.py",
+		"/C/Users/Simon/Downloads/vanilla.js",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/css/01-sign-up.css",
+		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/common.css",
+		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/common.sass"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"C:\\Users\\hp\\Desktop\\In Progress\\GIT\\Fast-Campus",
+			"<open folders>",
+			"<current file>",
+			"<open folders>",
+			"<current file>",
+			"",
+			"<current file>",
+			"<open folders>",
+			"<current file>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"log",
+			"_argumentsToArray",
+			"test_com",
+			"open",
+			"file",
+			"gl_Position",
+			"x",
+			"canvas",
+			"viewport",
+			"//",
+			"log",
+			"//",
+			"6",
+			"var",
+			"vertices",
+			",",
+			"s",
+			",",
+			"sideLength",
+			"0.2",
+			"PI",
+			"r",
+			"pi",
+			"2",
+			"axis",
+			"w",
+			"vertex",
+			"the",
+			"**",
+			"Read",
+			":",
+			"\n\n",
+			"`",
+			" - ",
+			"basic",
+			" - ",
+			"blind",
+			"nostalgia",
+			"\n01:",
+			"01:",
+			"forget",
+			"Forget",
+			"forget",
+			"clo",
+			"'",
+			"content",
+			"selectTab",
+			"false",
+			"app",
+			"true",
+			"8",
+			"ngApp",
+			"Shoes",
+			"btn",
+			"$scope",
+			"module",
+			"mCtrl",
+			"log",
+			"angular",
+			"-",
+			"ng",
+			"Document",
+			"changeOrder",
+			"changOrder",
+			"changeOrder",
+			"changOrder",
+			"age",
+			"people",
+			"name",
+			"this",
+			"ordermap",
+			"dataset",
+			"커",
+			"고",
+			":",
+			",\n    ",
+			",",
+			"name",
+			"_r\"",
+			"character",
+			"characters",
+			"dataset",
+			"\"",
+			"Document",
+			"div",
+			"false",
+			"ul",
+			"angular",
+			"ul",
+			"img",
+			"http",
+			"Simon",
+			"span",
+			"p",
+			"people",
+			"dataset",
+			"value",
+			"key",
+			"dataset",
+			"email",
+			"age",
+			"Document",
+			"first",
+			"\">",
+			"body",
+			"u-v",
+			"e-s",
+			"rt-su",
+			"-",
+			"\"",
+			"\">",
+			":",
+			"</",
+			"Document",
+			"value",
+			"localstorage.getItem(key)",
+			"global",
+			"this",
+			"localStorage",
+			"json",
+			"argument",
+			"set",
+			"sujinisi",
+			"//",
+			"clears",
+			"For ... in",
+			"for in",
+			"for of"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"'",
+			");\n",
+			">\n",
+			"', '",
+			" ",
+			"",
+			" ",
+			"",
+			"', '",
+			" ",
+			"",
+			" ",
+			"",
+			" ",
+			"\ncursor state design\n",
+			"std::cout",
+			"std::cin",
+			"https:",
+			"-",
+			"**",
+			"https://en.wikipedia.org/wiki/Media_type",
+			"구조",
+			"strong",
+			"#####",
+			"",
+			"**",
+			"len_board",
+			","
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Notes/Day 1, 2 catchup.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5759,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								375,
+								375
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 719,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgb",
+									"rgba",
+									"webcolors",
+									"hex",
+									"hsla",
+									"hsl",
+									"hex_compressed"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".md",
+								"current_syntax": "MarkdownHighlighting/Markdown",
+								"enabled": true,
+								"last_updated": 1473351273.99,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"open_with_edit": true,
+							"parser": "github",
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
+							"target": "disk",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Notes/Day 3 0905.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1213,
+								1213
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 102,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgb",
+									"rgba",
+									"webcolors",
+									"hex",
+									"hsla",
+									"hsl",
+									"hex_compressed"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".md",
+								"current_syntax": "MarkdownHighlighting/Markdown",
+								"enabled": true,
+								"last_updated": 1473351273.99,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"open_with_edit": true,
+							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 176.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Code/Current/DrawTriangle.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1364,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								495,
+								495
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 65,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgb",
+									"rgba",
+									"webcolors",
+									"hex",
+									"hsla",
+									"hsl",
+									"hex_compressed"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1473351273.99,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Code/Current/DrawTriangle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1089,
+								1089
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
+								"enabled": false,
+								"last_updated": 1473351273.99
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 194.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Code/Common/initShaders.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
+								"enabled": false,
+								"last_updated": 1473351273.99
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 69.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.CppBuilder":
+	{
+		"height": 90.0
+	},
+	"output.exec":
+	{
+		"height": 264.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 152.0
+	},
+	"pinned_build_system": "Packages/YUI Compressor/YUI Compressor.sublime-build",
+	"project": "CG_project.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": false,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"trydemo-",
+				"DAY-48-0826\\try-demo-3.html"
+			],
+			[
+				"nyuad",
+				"Resources\\_NYUAD-colors.scss"
+			],
+			[
+				"jquery",
+				"DAY-45-0819 jQuery\\jquery.html"
+			],
+			[
+				"jqu",
+				"DAY-48-0826\\js\\jQuery.storageManager.js"
+			],
+			[
+				"day48",
+				"DAY-48-0826\\README.md"
+			],
+			[
+				"storage",
+				"DAY-48-0826\\js\\storage.js"
+			],
+			[
+				"redme.md",
+				"README.md"
+			],
+			[
+				"ajax",
+				"DAY-47-0825 AJAX\\ajax.html"
+			],
+			[
+				"data.xml",
+				"DAY-47-0825 AJAX\\data\\data.xml"
+			],
+			[
+				".css",
+				"DAY-32-0729\\test.css"
+			],
+			[
+				"common.cs",
+				"Resources\\common.css"
+			],
+			[
+				"common",
+				"Resources\\common.sass"
+			],
+			[
+				"color",
+				"Resources\\_NYUAD-colors.scss"
+			],
+			[
+				"norma",
+				"Resources\\Initialization\\normalize.css"
+			],
+			[
+				"_colo",
+				"DAY-34-0803\\sass\\_colors.scss"
+			],
+			[
+				"merri",
+				"DAY-34-0803\\sass\\_merriweather.scss"
+			],
+			[
+				"color.scs",
+				"Resources\\_NYUAD-colors.scss"
+			],
+			[
+				"day33read",
+				"DAY-33-0802 JS\\README.md"
+			],
+			[
+				"readme",
+				"README.md"
+			],
+			[
+				"day30readm",
+				"DAY-30-0725\\README.md"
+			],
+			[
+				"grid-stati",
+				"DAY-32-0729\\grid-static-1280-8.css"
+			],
+			[
+				"gridstat",
+				"Resources\\grid-static-1280-8.css"
+			],
+			[
+				"myown5",
+				"DAY-29-0722\\my own quiz 5.md"
+			],
+			[
+				"commo",
+				"Fast-Campus\\Resources\\common.css"
+			],
+			[
+				"index.html",
+				"Fast-Campus\\DAY-21-0712\\index.html"
+			],
+			[
+				"holze",
+				"Fast-Campus\\DAY-23-0714\\css\\03-holzweiler-videobg.css"
+			],
+			[
+				"comm",
+				"Fast-Campus\\Resources\\common.css"
+			],
+			[
+				"fluid",
+				"Fast-Campus\\Resources\\fluid-grid.css"
+			],
+			[
+				"index",
+				"Fast-Campus\\DAY-21-0712\\index.html"
+			],
+			[
+				"team",
+				"Fast-Campus\\DAY-21-0712\\css\\04-Team-members.css"
+			],
+			[
+				"link",
+				"Fast-Campus\\Resources\\link-effects.css"
+			],
+			[
+				"pso",
+				"FDSgroupwork\\poster.html"
+			],
+			[
+				"test",
+				"Fast-Campus\\DAY-23-0714\\test.html"
+			],
+			[
+				"button",
+				"Fast-Campus\\Resources\\button-effects.css"
+			],
+			[
+				"holz",
+				"Fast-Campus\\DAY-23-0714\\image\\holzeweiler-logo.svg"
+			],
+			[
+				"square",
+				"Fast-Campus\\DAY-23-0714\\01-navigation-squarespace.html"
+			],
+			[
+				"flui",
+				"Fast-Campus\\Resources\\fluid-grid.css"
+			],
+			[
+				"temam",
+				"Fast-Campus\\DAY-21-0712\\css\\04-Team-members.css"
+			],
+			[
+				"link-eff",
+				"Fast-Campus\\Resources\\link-effects.css"
+			],
+			[
+				"butto",
+				"Fast-Campus\\Resources\\button-effects.css"
+			],
+			[
+				"teamme",
+				"Fast-Campus\\DAY-21-0712\\04-Team-members.html"
+			],
+			[
+				"1280",
+				"Fast-Campus\\Resources\\grid-static-1280-8.css"
+			],
+			[
+				"참기특",
+				"Fast-Campus\\참여기업특강-Startup-info-session.md"
+			],
+			[
+				"15reamde",
+				"Fast-Campus\\DAY-15-0704\\README.md"
+			],
+			[
+				"typog",
+				"Fast-Campus\\Resources\\typography-minor-third.css"
+			],
+			[
+				"grid",
+				"Fast-Campus\\DAY-20-0711\\grid-static-1280-8.css"
+			],
+			[
+				"link-",
+				"Fast-Campus\\DAY-20-0711\\01-CSS3-links-effects.html"
+			],
+			[
+				"aware",
+				"Fast-Campus\\DAY-17-0706\\01-aware-website.html"
+			],
+			[
+				"css3",
+				"Fast-Campus\\DAY-20-0711\\01-CSS3-links-effects.html"
+			],
+			[
+				"grid13",
+				"Fast-Campus\\Resources\\Grid System\\grid-1366-16col-6-52-6.css"
+			],
+			[
+				"day-1readme",
+				"Fast-Campus\\DAY-17-0706\\README.md"
+			],
+			[
+				"",
+				"Fast-Campus\\DAY-17-0706\\css\\01-typography.css"
+			],
+			[
+				"typogra",
+				"Fast-Campus\\DAY-17-0706\\css\\01-typography.css"
+			],
+			[
+				"day-1readme.md",
+				"Fast-Campus\\DAY-16-0705\\README.md"
+			],
+			[
+				"sele",
+				"Fast-Campus\\DAY-11-0628\\css\\selectors.css"
+			],
+			[
+				"inde",
+				"simonseo.github.io\\index.html"
+			],
+			[
+				"typogr",
+				"Fast-Campus\\DAY-17-0706\\css\\01-typography.css"
+			],
+			[
+				"common.",
+				"Fast-Campus\\Resources\\common.css"
+			],
+			[
+				"git",
+				"TIL\\git.md"
+			],
+			[
+				"typo",
+				"Fast-Campus\\DAY-17-0706\\css\\01-typography.css"
+			],
+			[
+				"index.",
+				"simonseo.github.io\\index.html"
+			],
+			[
+				"table",
+				"Fast-Campus\\DAY-04-0617\\04-table.html"
+			],
+			[
+				"float",
+				"Fast-Campus\\DAY-14-0701\\05-float-practice.html"
+			],
+			[
+				"spoqa",
+				"Fast-Campus\\DAY-14-0701\\css\\spoqa.css"
+			],
+			[
+				"common.css",
+				"Fast-Campus\\Resources\\common.css"
+			],
+			[
+				"daum",
+				"Fast-Campus\\DAY-15-0704\\css\\05-practice-daum-brunch.css"
+			],
+			[
+				"04-pra",
+				"Fast-Campus\\DAY-15-0704\\04-practice1.html"
+			],
+			[
+				"quiz-4",
+				"Fast-Campus\\DAY-13-0630\\Quiz-4.md"
+			],
+			[
+				"quiz",
+				"Fast-Campus\\DAY-10-0627 Git 특강\\Quiz-3.md"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"css",
+				"css"
+			]
+		],
+		"width": 398.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 4
+	}
+}

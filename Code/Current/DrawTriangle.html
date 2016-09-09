@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Draw Triangle</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="DrawTriangle.js"></script> 
+
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+//this is executed in the GPU
+
+attribute vec4 vPosition;
+void main(){
+
+
+		gl_Position = vPosition;
+		// gl_Position = vPosition + vec4(0.8, 0, 0, 0);
+		// gl_Position.x += 0.8; //translate in X direction
+		// gl_Position *= 1.5;
+		
+		//scale by 1.5
+		// gl_Position.x *= 1.5;
+		// gl_Position.y *= 1.5;
+
+		//rotation. Derived by hand.	
+		float x = vPosition.x;
+		float y = vPosition.y;
+		float pi = 3.1415926535;
+		float theta = pi / 6.0;
+		gl_Position.x = x*cos(theta) - y*sin(theta);
+		gl_Position.y = x*sin(theta) + y*cos(theta);
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+//this is executed in the GPU
+precision mediump float;
+
+void main(){
+    gl_FragColor = vec4( 0, 0, 1, 1 ); //sets color of the triangle. Each fragment is assigned different colors
+}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512">
+    HTML5 Canvas not supported!
+   </canvas>
+</body>
+</html>
+
