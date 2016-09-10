@@ -1,4 +1,4 @@
-# CS-AD 216 Computer Graphics
+# Computer Graphics (`CS-AD 216`)
 ##Course Description
 This is a student repository for the course Foundations of Computer Graphics, taught by [Professor Saurabh Ray](http://people.mpi-inf.mpg.de/~saurabh/) at [NYU Abu Dhabi](http://nyuad.nyu.edu/en/). The following is the course description:
 
@@ -6,6 +6,23 @@ This is a student repository for the course Foundations of Computer Graphics, ta
 
 ##Textbook
 The textbook used is [Interactive Computer Graphics - A Top-Down Approach with with WebGL by Angel and Shreiner, 7th Edition (March, 2014), Pearson.](https://www.pearsonhighered.com/program/Angel-Interactive-Computer-Graphics-A-Top-Down-Approach-with-Web-GL-7th-Edition/PGM127699.html)
+
+##Topics covered
+1. Math
+	- Linear Algebra
+	- 3D Transformations
+	- Projections
+1. Programming
+	- WebGL API
+	- JavaScript
+	- HTML
+	- GLSL ES
+1. Graphics techniques
+	- Lighting
+	- Texturing
+	- Meshing
+	- Ray Tracing
+	- Animation
 
 ##Course Schedule
 | Week    | Main material                                               |
