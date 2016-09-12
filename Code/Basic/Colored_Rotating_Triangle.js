@@ -39,11 +39,14 @@ window.onload = function init() {
 			// Do shader plumbing
 			var vPosition = gl.getAttribLocation(program, "vPosition");
 			gl.bindBuffer(gl.ARRAY_BUFFER, vBuffer);
+			console.log(vPosition);
 			gl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0);
 			gl.enableVertexAttribArray(vPosition);
 
 			var vColor = gl.getAttribLocation(program, "vColor");
 			gl.bindBuffer(gl.ARRAY_BUFFER, cBuffer); 
+			console.log(vColor);
+			console.dir(vColor);
 			gl.vertexAttribPointer(vColor, 3, gl.FLOAT, false, 0, 0);
 			gl.enableVertexAttribArray(vColor);
 

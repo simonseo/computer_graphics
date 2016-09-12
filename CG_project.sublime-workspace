@@ -520,46 +520,35 @@
 	"buffers":
 	[
 		{
-			"file": "Notes/Day 1, 2 catchup.md",
+			"file": "Notes/Day 4 0907.md",
 			"settings":
 			{
-				"buffer_size": 5759,
+				"buffer_size": 12070,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Notes/Day 3 0905.md",
+			"file": "Code/Basic/Colored_Rotating_Triangle.html",
 			"settings":
 			{
-				"buffer_size": 1278,
+				"buffer_size": 1085,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Code/Current/DrawTriangle.html",
+			"file": "Code/Basic/Colored_Rotating_Triangle.js",
 			"settings":
 			{
-				"buffer_size": 1364,
+				"buffer_size": 2108,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "\"use strict\";\nvar gl; // global variable\n\nwindow.onload = function init() {\n\t\t\t// Set up WebGL\n\t\t\tvar canvas = document.getElementById(\"gl-canvas\");\n\t\t\tgl = WebGLUtils.setupWebGL( canvas ); //gives access to drivers (GPU)\n\t\t\tif(!gl){alert(\"WebGL setup failed!\");}\n\t\t\t\n\t\t\t// gl.viewport( 0, 0, 1.5*canvas.width, 1.5*canvas.height );\n\n\t\t\t// Clear canvas\n\t\t\tgl.clearColor(51/255,51/255,51/255, 1.0);\n\t\t\tgl.clear(gl.COLOR_BUFFER_BIT);\n\t\t\t\n\t\t\t// Load shaders and initialize attribute buffers\n\t\t\tvar program = initShaders( gl, \"vertex-shader\", \"fragment-shader\" );\n\t\t\tgl.useProgram( program );\n\t\t\t\n\t\t\t// Load data into a buffer\n\t\t\tvar s = 0.4 / 2;\n\t\t\tvar squareVertices = [ s, s, -s, s, -s, -s, -s, -s, s, -s, s, s, ]; \n\t\t\t//clipping occurs on the right side because 1 is the limit\n\t\t\tvar vBuffer = gl.createBuffer(); // to put data into separate buffers, create separate buffers multiple times\n\t\t\tconsole.log(gl.ARRAY_BUFFER);\n\t\t\tgl.bindBuffer(gl.ARRAY_BUFFER, vBuffer); //binds vBuffer to gl.ARRAY_BUFFER\n\t\t\tgl.bufferData(gl.ARRAY_BUFFER, new Float32Array(squareVertices), gl.STATIC_DRAW);\n\t\t\t\n\t\t\t// Do shader plumbing\n\t\t\t// This single shader is used for multiple drawings.\n\t\t\tvar vPosition = gl.getAttribLocation(program, \"vPosition\"); //\"vPosition\" is a variable inside the GPU.\n\t\t\tconsole.log(vPosition); // 0?????\n\t\t\t\n\t\t\tgl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0); //2 notes that this is a xy coordinate\n\t\t\tgl.enableVertexAttribArray(vPosition);// This single shader is used for multiple drawings.\n\t\t\t\n\t\t\t//Draw a triangle\n\t\t\tgl.drawArrays(gl.TRIANGLES,0,6);   // note that the last argument is 3, not 1\n\t\t\t                                   // this draws the vertices in the buffer. \n\t\t\t\n\n\n\t\t\t//Draw a second shape\n\t\t\tvar triangleVertices = [ -1, 1, -1, -0.5, -0.5, 1 ]; \n\t\t\tvBuffer = gl.createBuffer(); \n\t\t\tgl.bindBuffer(gl.ARRAY_BUFFER, vBuffer);\n\t\t\tconsole.log(gl.ARRAY_BUFFER);\n\t\t\tgl.bufferData(gl.ARRAY_BUFFER, new Float32Array(triangleVertices), gl.STATIC_DRAW);\n\t\t\t\n\t\t\tvar vPosition = gl.getAttribLocation(program, \"vPosition\");\n\t\t\tgl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0);\n\t\t\tgl.enableVertexAttribArray(vPosition);\n\t\t\t\n\t\t\tgl.drawArrays(gl.TRIANGLES,0,3);\n\n};\n",
-			"file": "Code/Current/DrawTriangle.js",
-			"file_size": 2246,
-			"file_write_time": 131178996313944628,
+			"file": "Code/Basic/DrawTriangle.js",
 			"settings":
 			{
-				"buffer_size": 2205,
+				"buffer_size": 1034,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Code/Common/initShaders.js",
-			"settings":
-			{
-				"buffer_size": 1784,
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -639,16 +628,16 @@
 	"command_palette":
 	{
 		"height": 354.0,
-		"last_filter": "tab",
+		"last_filter": "wrap",
 		"selected_items":
 		[
 			[
-				"tab",
-				"Indentation: Convert to Tabs"
-			],
-			[
 				"wrap",
 				"Word Wrap: Toggle"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
 			],
 			[
 				"browser",
@@ -1191,6 +1180,13 @@
 	],
 	"file_history":
 	[
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/Jterm/jterm.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/Colored_Rotating_Triangle.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 3 0905.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 1, 2 catchup.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/DrawTriangle.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/DrawTriangle.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/README.md",
 		"/C/Users/Simon/Downloads/rklab-handout/rktest.py",
 		"/C/Users/Simon/Downloads/Computer Graphics/Code/Common/README.txt",
 		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -1311,14 +1307,7 @@
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-38-0809/01-dom-review.html",
 		"/C/Users/Simon/Desktop/present_map.py",
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/01-carousel.html",
-		"/C/Users/Simon/Desktop/elves.py",
-		"/C/Users/Simon/Desktop/present_map.txt",
-		"/C/Users/Simon/Desktop/elves.txt",
-		"/C/Users/Simon/Desktop/santafloor.py",
-		"/C/Users/Simon/Downloads/vanilla.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/css/01-sign-up.css",
-		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/common.css",
-		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/common.sass"
+		"/C/Users/Simon/Desktop/elves.py"
 	],
 	"find":
 	{
@@ -1351,6 +1340,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Unspecified",
+			"started",
+			"colors",
+			"vpositi",
+			":",
+			"On ",
+			"on",
+			"On",
+			"]",
+			"\t",
+			"glsl",
+			"JS",
+			"request",
 			"log",
 			"_argumentsToArray",
 			"test_com",
@@ -1465,20 +1467,7 @@
 			":",
 			"</",
 			"Document",
-			"value",
-			"localstorage.getItem(key)",
-			"global",
-			"this",
-			"localStorage",
-			"json",
-			"argument",
-			"set",
-			"sujinisi",
-			"//",
-			"clears",
-			"For ... in",
-			"for in",
-			"for of"
+			"value"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1525,59 +1514,62 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Notes/Day 1, 2 catchup.md",
+					"file": "Notes/Day 4 0907.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5759,
+						"buffer_size": 12070,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								375,
-								375
+								4883,
+								4883
 							]
 						],
 						"settings":
 						{
 							"WordCount":
 							{
-								"changes": 0,
-								"count": 719,
+								"changes": 8195,
+								"count": 1378,
 								"modified": false,
 								"selection": false,
 								"status": -1,
 								"syntax": "plain text"
 							},
-							"color_helper.box_height": 18,
+							"color_helper.box_height": 19,
 							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
 							"color_helper.file_palette":
 							[
 							],
+							"color_helper.preview_meta":
+							{
+							},
 							"color_helper.scan":
 							{
 								"allowed_colors":
 								[
-									"rgb",
-									"rgba",
-									"webcolors",
 									"hex",
 									"hsla",
+									"rgb",
 									"hsl",
-									"hex_compressed"
+									"rgba",
+									"hex_compressed",
+									"webcolors"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".md",
 								"current_syntax": "MarkdownHighlighting/Markdown",
 								"enabled": true,
-								"last_updated": 1473351273.99,
+								"last_updated": 1473511269.1,
 								"scan_completion_scopes":
 								[
 								],
@@ -1595,231 +1587,107 @@
 							"parser": "github",
 							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
 							"target": "disk",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": true
+							"word_wrap": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Notes/Day 3 0905.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1278,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1213,
-								1213
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 102,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"rgb",
-									"rgba",
-									"webcolors",
-									"hex",
-									"hsla",
-									"hsl",
-									"hex_compressed"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".md",
-								"current_syntax": "MarkdownHighlighting/Markdown",
-								"enabled": true,
-								"last_updated": 1473351273.99,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css -support.type.property-name.css -comment -string",
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"open_with_edit": true,
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 176.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Code/Current/DrawTriangle.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								495,
-								495
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 65,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"rgb",
-									"rgba",
-									"webcolors",
-									"hex",
-									"hsla",
-									"hsl",
-									"hex_compressed"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".html",
-								"current_syntax": "HTML/HTML",
-								"enabled": true,
-								"last_updated": 1473351273.99,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css -support.type.property-name.css -comment -string",
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Code/Current/DrawTriangle.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2205,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1089,
-								1089
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": -1,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "javascript"
-							},
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JavaScript/JavaScript",
-								"enabled": false,
-								"last_updated": 1473351273.99
-							},
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 194.0,
+						"translation.x": 808.0,
+						"translation.y": 2048.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "Code/Common/initShaders.js",
-					"semi_transient": true,
+					"buffer": 1,
+					"file": "Code/Basic/Colored_Rotating_Triangle.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1784,
+						"buffer_size": 1085,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								729,
-								729
+								594,
+								594
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 42,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 19,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hex",
+									"hsla",
+									"rgb",
+									"hsl",
+									"rgba",
+									"hex_compressed",
+									"webcolors"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1473511269.1,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 253.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Code/Basic/Colored_Rotating_Triangle.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2108,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1475,
+								1475
 							]
 						],
 						"settings":
@@ -1832,7 +1700,7 @@
 								"status": -1,
 								"syntax": "javascript"
 							},
-							"color_helper.box_height": 18,
+							"color_helper.box_height": 19,
 							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
 							"color_helper.file_palette":
 							[
@@ -1845,17 +1713,68 @@
 								"current_ext": ".js",
 								"current_syntax": "JavaScript/JavaScript",
 								"enabled": false,
-								"last_updated": 1473351273.99
+								"last_updated": 1473511269.1
 							},
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1330.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Code/Basic/DrawTriangle.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								884,
+								884
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"color_helper.box_height": 19,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
+								"enabled": false,
+								"last_updated": 1473511269.1
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 176.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1863,7 +1782,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -1912,7 +1831,7 @@
 	"project": "CG_project.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 60.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -2229,7 +2148,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":
