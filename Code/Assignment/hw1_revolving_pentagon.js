@@ -1,3 +1,5 @@
+// ⓒ Simon Seo, 2016
+
 (function(global) {
 	'use strict';
 	var gl;

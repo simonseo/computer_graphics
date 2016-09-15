@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"get",
+				"getElementById"
+			],
+			[
 				"class",
 				"class\tAttr"
 			],
@@ -74,10 +78,6 @@
 			[
 				"sujin",
 				"sujin_string\t(str)"
-			],
-			[
-				"get",
-				"getItem\t(?)"
 			],
 			[
 				"str",
@@ -519,62 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Notes/Day 4 0907.md",
-			"settings":
-			{
-				"buffer_size": 12070,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Code/Basic/gasket2.html",
-			"settings":
-			{
-				"buffer_size": 851,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Code/Basic/gasket2.js",
-			"settings":
-			{
-				"buffer_size": 2004,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Code/Basic/Colored_Rotating_Triangle.html",
-			"settings":
-			{
-				"buffer_size": 1085,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Code/Basic/Colored_Rotating_Triangle.js",
-			"settings":
-			{
-				"buffer_size": 2115,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Code/Current/hw_koch_curve.html",
-			"settings":
-			{
-				"buffer_size": 574,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Code/Current/hw_koch_curve.js",
-			"settings":
-			{
-				"buffer_size": 302,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -651,17 +595,17 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 354.0,
-		"last_filter": "wrap",
+		"height": 95.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
-				"wrap",
-				"Word Wrap: Toggle"
-			],
-			[
 				"tab",
 				"Indentation: Convert to Tabs"
+			],
+			[
+				"wrap",
+				"Word Wrap: Toggle"
 			],
 			[
 				"browser",
@@ -1199,14 +1143,30 @@
 	[
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current"
 	],
 	"file_history":
 	[
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_koch_curve.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_revolving_pentagon.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_revolving_pentagon_v2.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Colored_Rotating_Triangle.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Colored_Rotating_Triangle.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Draw2Triangles _Separata Buffers_.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Draw2Triangles _Separate Buffers_.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/MV.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/gasket2.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/gasket2.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/Colored_Rotating_Triangle.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/Colored_Rotating_Triangle.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_koch_curve.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/hw_koch_curve.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/hw_koch_curve.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 5 0914.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 4 0907.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/DrawTriangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/Jterm/jterm.md",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/Colored_Rotating_Triangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 3 0905.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 1, 2 catchup.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/DrawTriangle.js",
@@ -1315,23 +1275,7 @@
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/date.js",
 		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JavaScript/iife.sublime-snippet",
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-34-0803/01-dom-js.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/functions.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/functions.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/jterm.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/01-font-size.html",
-		"/E/Users/hp/Desktop/In Progress/GIT/simonseo.kr.tn/_posts/2013-11-14-sample-2.md",
-		"/E/Users/hp/Desktop/In Progress/GIT/simonseo.kr.tn/_posts/2013-11-15-hello-world.md",
-		"/C/Users/Simon/Documents/Resources/helper.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/css/style.css",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/js/01-font-size.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/sass/_common.scss",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/sass/01-sign-up.sass",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/01-sign-up.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-38-0809/01-dom-review.html",
-		"/C/Users/Simon/Desktop/present_map.py",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/01-carousel.html"
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.html"
 	],
 	"find":
 	{
@@ -1364,6 +1308,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"[1]",
+			"[0]",
+			"rotate",
+			"recursiveKoch",
+			"console.l",
+			"output_array",
+			"arr",
+			"output_arr",
+			"array",
+			"arr",
+			"i",
+			"\t\n",
+			"console.lo",
+			"t",
+			"ytmp",
+			"xtmp",
+			"midpoint",
+			"x",
+			"number",
+			"step",
+			"x0",
+			"x",
+			"context",
+			"sin",
 			"but",
 			"Ut",
 			"ut",
@@ -1467,31 +1435,7 @@
 			"Document",
 			"div",
 			"false",
-			"ul",
-			"angular",
-			"ul",
-			"img",
-			"http",
-			"Simon",
-			"span",
-			"p",
-			"people",
-			"dataset",
-			"value",
-			"key",
-			"dataset",
-			"email",
-			"age",
-			"Document",
-			"first",
-			"\">",
-			"body",
-			"u-v",
-			"e-s",
-			"rt-su",
-			"-",
-			"\"",
-			"\">"
+			"ul"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1538,470 +1482,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Notes/Day 4 0907.md",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12070,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4883,
-								4883
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 1378,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hsl",
-									"webcolors",
-									"rgb",
-									"hsla",
-									"hex_compressed",
-									"hex",
-									"rgba"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".md",
-								"current_syntax": "MarkdownHighlighting/Markdown",
-								"enabled": true,
-								"last_updated": 1473724410.15,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css -support.type.property-name.css -comment -string",
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"open_with_edit": true,
-							"parser": "github",
-							"syntax": "Packages/MarkdownHighlighting/Markdown.sublime-syntax",
-							"target": "disk",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 2048.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Code/Basic/gasket2.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 851,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 0,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hsl",
-									"webcolors",
-									"rgb",
-									"hsla",
-									"hex_compressed",
-									"hex",
-									"rgba"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".html",
-								"current_syntax": "HTML/HTML",
-								"enabled": true,
-								"last_updated": 1473724410.15,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css -support.type.property-name.css -comment -string",
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Code/Basic/gasket2.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2004,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								255,
-								255
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": -1,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "javascript"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JavaScript/JavaScript",
-								"enabled": false,
-								"last_updated": 1473724410.15
-							},
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 625.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Code/Basic/Colored_Rotating_Triangle.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1085,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								827,
-								827
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 42,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hsl",
-									"webcolors",
-									"rgb",
-									"hsla",
-									"hex_compressed",
-									"hex",
-									"rgba"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".html",
-								"current_syntax": "HTML/HTML",
-								"enabled": true,
-								"last_updated": 1473724410.15,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css -support.type.property-name.css -comment -string",
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 212.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Code/Basic/Colored_Rotating_Triangle.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								549,
-								549
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": -1,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "javascript"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JavaScript/JavaScript",
-								"enabled": false,
-								"last_updated": 1473724410.15
-							},
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 70.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Code/Current/hw_koch_curve.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 574,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								473,
-								473
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 329,
-								"count": 4,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"allowed_colors":
-								[
-									"hsl",
-									"webcolors",
-									"rgb",
-									"hsla",
-									"hex_compressed",
-									"hex",
-									"rgba"
-								],
-								"compress_hex_output": true,
-								"current_ext": ".html",
-								"current_syntax": "HTML/HTML",
-								"enabled": true,
-								"last_updated": 1473724410.15,
-								"scan_completion_scopes":
-								[
-								],
-								"scan_scopes":
-								[
-									"meta.property-list.css -support.type.property-name.css -comment -string",
-									"meta.property-value.css -comment -string",
-									"meta.value.css -comment -string",
-									"meta.tag.inline.any.html string.quoted",
-									"meta.tag.any.html meta.attribute-with-value.style.html"
-								],
-								"use_hex_argb": false
-							},
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 50.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Code/Current/hw_koch_curve.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 302,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								87,
-								87
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": -1,
-								"modified": true,
-								"selection": true,
-								"status": -1,
-								"syntax": "javascript"
-							},
-							"color_helper.box_height": 19,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".js",
-								"current_syntax": "JavaScript/JavaScript",
-								"enabled": false,
-								"last_updated": 1473724410.15
-							},
-							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -2373,7 +1855,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":

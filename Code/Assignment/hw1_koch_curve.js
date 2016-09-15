@@ -1,3 +1,5 @@
+// ⓒ Simon Seo, 2016
+
 (function(global) {
 	'use strict';
 	var sin = Math.sin, cos = Math.cos, PI = Math.PI;
