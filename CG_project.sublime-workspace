@@ -528,6 +528,22 @@
 			}
 		},
 		{
+			"file": "Code/Basic/gasket2.html",
+			"settings":
+			{
+				"buffer_size": 851,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Code/Basic/gasket2.js",
+			"settings":
+			{
+				"buffer_size": 2004,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "Code/Basic/Colored_Rotating_Triangle.html",
 			"settings":
 			{
@@ -539,15 +555,23 @@
 			"file": "Code/Basic/Colored_Rotating_Triangle.js",
 			"settings":
 			{
-				"buffer_size": 2108,
+				"buffer_size": 2115,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Code/Basic/DrawTriangle.js",
+			"file": "Code/Current/hw_koch_curve.html",
 			"settings":
 			{
-				"buffer_size": 1034,
+				"buffer_size": 574,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Code/Current/hw_koch_curve.js",
+			"settings":
+			{
+				"buffer_size": 302,
 				"line_ending": "Windows"
 			}
 		}
@@ -1176,10 +1200,11 @@
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common"
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current"
 	],
 	"file_history":
 	[
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/DrawTriangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/Jterm/jterm.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/Colored_Rotating_Triangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 3 0905.md",
@@ -1306,8 +1331,7 @@
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/sport-shop/01-sign-up.html",
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-38-0809/01-dom-review.html",
 		"/C/Users/Simon/Desktop/present_map.py",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/01-carousel.html",
-		"/C/Users/Simon/Desktop/elves.py"
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/01-carousel.html"
 	],
 	"find":
 	{
@@ -1340,6 +1364,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"but",
+			"Ut",
+			"ut",
+			"vertex",
 			"Unspecified",
 			"started",
 			"colors",
@@ -1463,11 +1491,7 @@
 			"rt-su",
 			"-",
 			"\"",
-			"\">",
-			":",
-			"</",
-			"Document",
-			"value"
+			"\">"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1514,7 +1538,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -1538,7 +1562,7 @@
 						{
 							"WordCount":
 							{
-								"changes": 8195,
+								"changes": 0,
 								"count": 1378,
 								"modified": false,
 								"selection": false,
@@ -1550,26 +1574,23 @@
 							"color_helper.file_palette":
 							[
 							],
-							"color_helper.preview_meta":
-							{
-							},
 							"color_helper.scan":
 							{
 								"allowed_colors":
 								[
-									"hex",
-									"hsla",
-									"rgb",
 									"hsl",
-									"rgba",
+									"webcolors",
+									"rgb",
+									"hsla",
 									"hex_compressed",
-									"webcolors"
+									"hex",
+									"rgba"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".md",
 								"current_syntax": "MarkdownHighlighting/Markdown",
 								"enabled": true,
-								"last_updated": 1473511269.1,
+								"last_updated": 1473724410.15,
 								"scan_completion_scopes":
 								[
 								],
@@ -1589,15 +1610,143 @@
 							"target": "disk",
 							"word_wrap": false
 						},
-						"translation.x": 808.0,
+						"translation.x": 0.0,
 						"translation.y": 2048.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "Code/Basic/gasket2.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 851,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 0,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 19,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"webcolors",
+									"rgb",
+									"hsla",
+									"hex_compressed",
+									"hex",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1473724410.15,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Code/Basic/gasket2.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2004,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": -1,
+								"modified": true,
+								"selection": true,
+								"status": -1,
+								"syntax": "javascript"
+							},
+							"color_helper.box_height": 19,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"current_ext": ".js",
+								"current_syntax": "JavaScript/JavaScript",
+								"enabled": false,
+								"last_updated": 1473724410.15
+							},
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 625.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "Code/Basic/Colored_Rotating_Triangle.html",
 					"semi_transient": false,
 					"settings":
@@ -1609,8 +1758,8 @@
 						"selection":
 						[
 							[
-								594,
-								594
+								827,
+								827
 							]
 						],
 						"settings":
@@ -1636,19 +1785,19 @@
 							{
 								"allowed_colors":
 								[
-									"hex",
-									"hsla",
-									"rgb",
 									"hsl",
-									"rgba",
+									"webcolors",
+									"rgb",
+									"hsla",
 									"hex_compressed",
-									"webcolors"
+									"hex",
+									"rgba"
 								],
 								"compress_hex_output": true,
 								"current_ext": ".html",
 								"current_syntax": "HTML/HTML",
 								"enabled": true,
-								"last_updated": 1473511269.1,
+								"last_updated": 1473724410.15,
 								"scan_completion_scopes":
 								[
 								],
@@ -1667,27 +1816,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 253.0,
+						"translation.y": 212.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "Code/Basic/Colored_Rotating_Triangle.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2108,
+						"buffer_size": 2115,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1475,
-								1475
+								549,
+								549
 							]
 						],
 						"settings":
@@ -1713,33 +1862,109 @@
 								"current_ext": ".js",
 								"current_syntax": "JavaScript/JavaScript",
 								"enabled": false,
-								"last_updated": 1473511269.1
+								"last_updated": 1473724410.15
 							},
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1330.0,
+						"translation.y": 70.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Code/Basic/DrawTriangle.js",
-					"semi_transient": true,
+					"buffer": 5,
+					"file": "Code/Current/hw_koch_curve.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1034,
+						"buffer_size": 574,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								884,
-								884
+								473,
+								473
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 329,
+								"count": 4,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 19,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"webcolors",
+									"rgb",
+									"hsla",
+									"hex_compressed",
+									"hex",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1473724410.15,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 50.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Code/Current/hw_koch_curve.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								87,
+								87
 							]
 						],
 						"settings":
@@ -1765,16 +1990,16 @@
 								"current_ext": ".js",
 								"current_syntax": "JavaScript/JavaScript",
 								"enabled": false,
-								"last_updated": 1473511269.1
+								"last_updated": 1473724410.15
 							},
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 176.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
