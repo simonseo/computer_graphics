@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Rotating Cube</title>
+	<style>
+		label {
+			display: block;
+		}
+		input[type="range"] {
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="gl-canvas" width="512" height="512">
+		HTML5 Canvas not supported!
+	</canvas>
+	<div class="controller">
+		<label>Rotate X<input name="x-slider" id="x-slider" type="range" min="0" max="720" step="5" value="360"></label>
+		<label>Rotate Y<input name="y-slider" id="y-slider" type="range" min="0" max="720" step="5" value="360"></label>
+		<label>Rotate Z<input name="z-slider" id="z-slider" type="range" min="0" max="720" step="5" value="360"></label>
+	</div>
+	<script src="../../Common/webgl-utils.js"></script>
+	<script src="../../Common/initShaders.js"></script>
+	<script src="../../Common/MV.js"></script>
+	<script src="../../Common/SS.js"></script>
+	<script src="hw2_cube.js"></script>
+	<script id="vertex-shader" type="x-shader/x-vertex">
+	attribute vec4 vPosition;
+	uniform float x_theta;
+	uniform float y_theta;
+	uniform float z_theta;
+	attribute vec4 vColor;
+	varying vec4 fColor;
+
+	void main(){
+		float x = vPosition.x;
+		float y = vPosition.y;
+		float z = vPosition.z;
+
+		float x1 = x*cos(z_theta) - y*sin(z_theta);
+		float y1 = x*sin(z_theta) + y*cos(z_theta);
+		float z1 = z;
+
+		float x2 = x1;
+		float y2 = y1*cos(x_theta) - z1*sin(x_theta);
+		float z2 = y1*sin(x_theta) + z1*cos(x_theta);
+
+		float z3 = z2*cos(y_theta) - x2*sin(y_theta);
+		float x3 = z2*sin(y_theta) + x2*cos(y_theta);
+		float y3 = y2;
+		gl_Position = vec4(x3, y3, z3, 1);
+		fColor = vColor;
+	}
+	</script>
+	<script id="fragment-shader" type="x-shader/x-fragment">
+	precision mediump float;
+	varying vec4 fColor;
+
+	void main(){
+		gl_FragColor = fColor;
+	}
+	</script>
+</body>
+</html>

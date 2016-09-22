@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Koch Curve using WebGL</title>
+	<script src="../../Common/initShaders.js"></script>
+	<script src="../../Common/MV.js"></script>
+	<script src="../../Common/webgl-utils.js"></script>
+</head>
+<body>
+
+	<canvas id="gl-canvas" width="600" height="600">Canvas not supported!</canvas>
+
+	<script src="hw1_koch_curve.js"></script>
+	<script id="vertex-shader" type="x-shader/x-vertex">
+		attribute vec4 vPosition;
+		void main() {
+			gl_Position = vPosition;
+		}
+	</script>
+	<script id="fragment-shader" type="x-shader/x-fragment">
+		void main() {
+			gl_FragColor = vec4( 1.0, 0.0, 0.0, 1.0 );
+		}
+	</script>
+</body>
+
+</html>

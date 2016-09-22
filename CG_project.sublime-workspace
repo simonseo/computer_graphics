@@ -4,16 +4,44 @@
 		"selected_items":
 		[
 			[
+				"prod",
+				"production_rules\t{}"
+			],
+			[
+				"con",
+				"config\t(?)"
+			],
+			[
+				"axio",
+				"axiom_idx\t(num)"
+			],
+			[
+				"axi",
+				"axiom_idx\t(num)"
+			],
+			[
+				"pro",
+				"production\t(num)"
+			],
+			[
+				"x",
+				"x_theta"
+			],
+			[
+				"z",
+				"z_theta"
+			],
+			[
+				"data",
+				"dataTypeOf"
+			],
+			[
 				"get",
 				"getElementById"
 			],
 			[
 				"class",
 				"class\tAttr"
-			],
-			[
-				"con",
-				"controller\tAngularJS"
 			],
 			[
 				"activ",
@@ -486,39 +514,29 @@
 			[
 				"font",
 				"font-family"
-			],
-			[
-				"bd",
-				"bdrs\tborder-radius"
-			],
-			[
-				"c-p",
-				"cur-p\tcursor: pointer;"
-			],
-			[
-				"ic",
-				"svg-icon-news.png\tw:16 h:16"
-			],
-			[
-				"t",
-				"table-cell"
-			],
-			[
-				"bdc",
-				"bdcl-c\tborder-collapse: collapse;"
-			],
-			[
-				"svg",
-				"svg-icon-storage .png\tw:14 h:16"
-			],
-			[
-				"inf",
-				"photo-Inf-02.png\tw:60 h:60"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Code/Assignment/HW 2/hw2_L-Systems.html",
+			"settings":
+			{
+				"buffer_size": 785,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Code/Assignment/HW 2/hw2_cube.html",
+			"settings":
+			{
+				"buffer_size": 1833,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -595,17 +613,41 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 95.0,
-		"last_filter": "",
+		"height": 275.0,
+		"last_filter": "dupli",
 		"selected_items":
 		[
 			[
-				"tab",
-				"Indentation: Convert to Tabs"
+				"dupli",
+				"File: Duplicate"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"rena",
+				"File: Rename"
 			],
 			[
 				"wrap",
 				"Word Wrap: Toggle"
+			],
+			[
+				"set md",
+				"Set Syntax: Markdown"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"tab",
+				"Indentation: Convert to Tabs"
 			],
 			[
 				"browser",
@@ -614,10 +656,6 @@
 			[
 				"key bind",
 				"Preferences: Alignment Key Bindings – User"
-			],
-			[
-				"set md",
-				"Set Syntax: Markdown"
 			],
 			[
 				"move",
@@ -632,16 +670,8 @@
 				"Set Syntax: HTML"
 			],
 			[
-				"renam",
-				"File: Rename"
-			],
-			[
 				"w",
 				"Word Wrap: Toggle"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"list",
@@ -670,14 +700,6 @@
 			[
 				"set ",
 				"Set Syntax: Plain Text"
-			],
-			[
-				"dele",
-				"File: Delete"
-			],
-			[
-				"rena",
-				"File: Rename"
 			],
 			[
 				"repl node",
@@ -1106,10 +1128,6 @@
 			[
 				"linter",
 				"SublimeLinter: Show All Errors"
-			],
-			[
-				"sublimeinp",
-				"SublimeInput: Build"
 			]
 		],
 		"width": 510.0
@@ -1144,18 +1162,38 @@
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current"
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 1",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common",
+		"/C/Users/Simon/Documents/Front-End-WebDev"
 	],
 	"file_history":
 	[
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/SS.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems_v2.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems_v3.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_cube.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_cube.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/MV.js",
+		"/C/Users/Simon/Downloads/Pyramid.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 5 0914.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 7 0921.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 1/hw1_revolving_pentagon_v2.html",
+		"/C/Users/Simon/Downloads/AddingInteraction.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/L-Systemsss.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 1/hw1_revolving_pentagon.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 1/hw1_koch_curve.html",
+		"/C/Users/Simon/Documents/SSEL/tree.md",
+		"/C/Users/Simon/Documents/SSEL/installation.md",
+		"/C/Users/Simon/Documents/SSEL/setup.sh.txt",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_revolving_pentagon_v2.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_koch_curve.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_revolving_pentagon.js",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_revolving_pentagon_v2.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Colored_Rotating_Triangle.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Colored_Rotating_Triangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Draw2Triangles _Separata Buffers_.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Draw2Triangles _Separate Buffers_.js",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/MV.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/gasket2.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/gasket2.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/Colored_Rotating_Triangle.html",
@@ -1163,7 +1201,6 @@
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw1_koch_curve.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/hw_koch_curve.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/hw_koch_curve.js",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 5 0914.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 4 0907.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/DrawTriangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/Jterm/jterm.md",
@@ -1258,24 +1295,7 @@
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/jquery.html",
 		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/jquery/src/queue.js",
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.sass",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/PyV8/win64-p3/PyV8.py",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-32-0729/test.css",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-42-0816/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-41-0812/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-39-0810/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/Resources/helper.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/button.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/num.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/buttons.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-40-0811/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/button.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-44-0818/date.js",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/snippets/JavaScript/iife.sublime-snippet",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/closure.html"
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/carousel.js"
 	],
 	"find":
 	{
@@ -1308,6 +1328,80 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"char",
+			"len",
+			"rule",
+			"config",
+			"result",
+			"config_save",
+			"Math.PI",
+			"alpha",
+			"theta",
+			"cos",
+			":",
+			"idx",
+			"axiom_idx",
+			"axiom",
+			"= ",
+			"var",
+			"property",
+			"v.",
+			"quad",
+			"c]",
+			"b]",
+			"a]",
+			"a",
+			",",
+			"javascript",
+			"y",
+			"x",
+			"ut",
+			"x_",
+			"y",
+			"z",
+			"z_",
+			"x",
+			"y",
+			"z_",
+			"y",
+			"t",
+			"a",
+			"clone",
+			"0",
+			"[",
+			"istype",
+			"typeof",
+			"oftype",
+			"arr",
+			"Point",
+			"vertices",
+			",",
+			"vertices",
+			", ",
+			"argumentstoa",
+			"theta",
+			"X",
+			"name",
+			"v",
+			" ",
+			"Y",
+			"depth",
+			"R",
+			"slider",
+			"Slider",
+			"text",
+			"slider",
+			"mult",
+			"mmultult",
+			"//",
+			"addeventlistener",
+			"evt",
+			"(e)",
+			"log",
+			"apache2",
+			"redwood-rout",
+			"gopath",
+			"-",
 			"[1]",
 			"[0]",
 			"rotate",
@@ -1361,81 +1455,7 @@
 			"//",
 			"log",
 			"//",
-			"6",
-			"var",
-			"vertices",
-			",",
-			"s",
-			",",
-			"sideLength",
-			"0.2",
-			"PI",
-			"r",
-			"pi",
-			"2",
-			"axis",
-			"w",
-			"vertex",
-			"the",
-			"**",
-			"Read",
-			":",
-			"\n\n",
-			"`",
-			" - ",
-			"basic",
-			" - ",
-			"blind",
-			"nostalgia",
-			"\n01:",
-			"01:",
-			"forget",
-			"Forget",
-			"forget",
-			"clo",
-			"'",
-			"content",
-			"selectTab",
-			"false",
-			"app",
-			"true",
-			"8",
-			"ngApp",
-			"Shoes",
-			"btn",
-			"$scope",
-			"module",
-			"mCtrl",
-			"log",
-			"angular",
-			"-",
-			"ng",
-			"Document",
-			"changeOrder",
-			"changOrder",
-			"changeOrder",
-			"changOrder",
-			"age",
-			"people",
-			"name",
-			"this",
-			"ordermap",
-			"dataset",
-			"커",
-			"고",
-			":",
-			",\n    ",
-			",",
-			"name",
-			"_r\"",
-			"character",
-			"characters",
-			"dataset",
-			"\"",
-			"Document",
-			"div",
-			"false",
-			"ul"
+			"6"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1482,14 +1502,165 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Code/Assignment/HW 2/hw2_L-Systems.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								152,
+								152
+							]
+						],
+						"settings":
+						{
+							"WordCount":
+							{
+								"changes": 0,
+								"count": 20,
+								"modified": false,
+								"selection": false,
+								"status": -1,
+								"syntax": "plain text"
+							},
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.preview_meta":
+							{
+							},
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"hsl",
+									"rgb",
+									"hsla",
+									"webcolors",
+									"hex",
+									"hex_compressed",
+									"rgba"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1474565893.43,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Code/Assignment/HW 2/hw2_cube.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1833,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								751,
+								751
+							],
+							[
+								804,
+								804
+							],
+							[
+								857,
+								857
+							],
+							[
+								901,
+								901
+							]
+						],
+						"settings":
+						{
+							"color_helper.box_height": 18,
+							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
+							"color_helper.file_palette":
+							[
+							],
+							"color_helper.scan":
+							{
+								"allowed_colors":
+								[
+									"rgb",
+									"hsl",
+									"rgba",
+									"hsla",
+									"webcolors",
+									"hex",
+									"hex_compressed"
+								],
+								"compress_hex_output": true,
+								"current_ext": ".html",
+								"current_syntax": "HTML/HTML",
+								"enabled": true,
+								"last_updated": 1474495935.31,
+								"scan_completion_scopes":
+								[
+								],
+								"scan_scopes":
+								[
+									"meta.property-list.css -support.type.property-name.css -comment -string",
+									"meta.property-value.css -comment -string",
+									"meta.value.css -comment -string",
+									"meta.tag.inline.any.html string.quoted",
+									"meta.tag.any.html meta.attribute-with-value.style.html"
+								],
+								"use_hex_argb": false
+							},
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 459.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 32.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -1538,7 +1709,7 @@
 	"project": "CG_project.sublime-project",
 	"replace":
 	{
-		"height": 60.0
+		"height": 58.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -1828,12 +1999,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"E:\\Users\\hp\\Desktop\\In Progress\\NYUAD Sophomore\\_Computer Systems Organization\\cso.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -1855,7 +2030,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 273.0,
 	"status_bar_visible": true,
 	"template_settings":
