@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Pyramid</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="Pyramid.js"></script> 
+
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 fColor;
+uniform float time;
+
+void main(){
+       fColor = vColor;
+       float x = vPosition.x;
+       float y = vPosition.y;
+       float z = vPosition.z;
+
+       gl_Position.x = x*cos(time) - z*sin(time);
+       gl_Position.z = x*sin(time) + z*cos(time);
+       gl_Position.y = y;
+       gl_Position.w = 1.0;
+
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 fColor;
+void main(){
+    gl_FragColor = fColor;
+}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512">
+    HTML5 Canvas not supported!
+   </canvas>
+</body>
+</html>
+

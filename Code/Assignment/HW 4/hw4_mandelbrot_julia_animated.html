@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Mandelbrot and Julia Sets</title>
+	<style>
+		#gl-canvas {
+			float: left;
+		}
+		.console {
+			width: 512px;
+			height: 512px;
+			float: left;
+		}
+		.console {
+			overflow-y: scroll;
+		}
+		#zoom {
+			width: 512px;
+		}
+	</style>
+</head>
+<body>
+<canvas id="gl-canvas" width="800" height="600">
+	HTML5 Canvas not supported!
+</canvas>
+<div class="console">
+	<h1>Mandelbrot &amp; Julia Set</h1>
+	<ol>
+		<li>Zoom in/out using mousewheel (zooms into cursor location)</li>
+		<li>Move Canvas around by clicking and dragging it</li>
+		<li>to change shape, change formula in fragment shader</li>
+	</ol>
+</div>
+
+<script src="../../Common/webgl-utils.js"></script>
+<script src="../../Common/initShaders.js"></script>
+<script src="../../Common/MV.js"></script>
+<script src="../../Common/SS.js"></script>
+<script src="hw4_mandelbrot_julia.js"></script>
+<script id="vertex-shader" type="x-shader/x-vertex">
+	attribute vec4 vPosition;
+	varying vec2 position;
+	varying float MAX_M;
+	uniform float ut;
+	void main(){
+		position = vPosition.xy;
+		gl_Position = vPosition;
+		MAX_M = ut;
+	}
+</script>
+<script id="fragment-shader" type="x-shader/x-fragment">
+	precision mediump float;
+	varying vec2 position;
+	varying float MAX_M;
+	const float MAX_N = 200.0;
+	const vec4 DEFAULT_COLOR = vec4(239.0/255.0, 139.0/255.0, 33.0/255.0, 1.0); //NYUAD Color - Sunset
+	void main(){
+		// Formulas
+		// vec2 zn = vec2(0, 0), c = position;         //Mandelbrot
+		vec2 zn = position, c = vec2(0.285, 0.01);      //Julia c = 0.285 + 0.01i, MAX_M = 150.0
+		// vec2 zn = position, c = vec2(-0.7269, 0.1889);  //Julia c = -0.7269 + 0.1889i
+		// vec2 zn = position, c = vec2(-0.8, 0.156);      //Julia c = -0.8 + 0.156i
+		// vec2 zn = position, c = vec2(-0.621, -0.4511);  //Julia c = -0.621 - 0.4511i
+
+		float n = MAX_M;
+		for (int i = 0; i < int(MAX_N); i++ ) {
+			float x = zn.x;
+			float y = zn.y;
+			zn.x = x * x - y * y + c.x;
+			zn.y = 2.0 * x * y + c.y;
+			if (length(zn) > 2.0) {
+				n = float(i);
+				break;
+			}
+			if (i > int(MAX_M)) {
+				break;
+			}
+		}
+		if (n < MAX_M) {
+			gl_FragColor = vec4( n*n/(MAX_M*MAX_M), n*n/(MAX_M*MAX_M), min(n*1.2/MAX_M, 1.0), 1.0 );
+		} else {
+			gl_FragColor = DEFAULT_COLOR; 
+		}
+	}
+</script>
+</body>
+</html>

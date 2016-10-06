@@ -1,0 +1,54 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Adding Interaction</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="AddingInteraction.js"></script> 
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 fColor;
+uniform float Time;
+void main(){
+        fColor = vColor;
+        
+        float theta = -0.002*Time;
+        float x = vPosition.x;
+        float y = vPosition.y;
+        float x1 = x*cos(theta) - y*sin(theta);
+        float y1 = x*sin(theta) + y*cos(theta);
+        gl_Position = vec4(x1,y1,0,1);
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 fColor;
+void main(){
+    gl_FragColor = fColor;
+}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512">
+    HTML5 Canvas not supported!
+   </canvas>
+   <p>
+   <button id="Flip Button"> Flip Direction </button> 
+	
+   <input id="Speed Slider" type="range" 
+     min="0", max="10", step="0.1" > Speed Control 
+   </input>
+   </p>
+   <p> Clicking at any point in the window prints its normalized device coordinates
+	   on the console.
+   </p>
+ 
+</body>
+</html>
+
