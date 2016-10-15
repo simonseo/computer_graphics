@@ -2,8 +2,9 @@
 	"use strict";
 	var gl;
 	var canvas = document.getElementById("gl-canvas");
-	var ut; //used for animating
-	var SPEED = 0.03;
+	var ut, ud;       //parameters used for animating
+	var SPEED = 24;   // speed of animation (fps)
+	var DURATION = 10; //duration of animation (s)
 
 	window.onload = function init() {
 		// Set up WebGL
@@ -45,13 +46,16 @@
 
 		//Draw
 		ut = gl.getUniformLocation(program, "t");
+		ud = gl.getUniformLocation(program, "d");
 		requestAnimFrame(render);
 	};
 
 	function render(now) {
 		requestAnimFrame(render);
-		var t = now * SPEED;
+		var t = now/1000 * SPEED;
+		var d = SPEED * DURATION;
 		gl.uniform1f(ut, t);
+		gl.uniform1f(ud, d);
 		gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_BYTE, 0);
 	}
 

@@ -9,6 +9,7 @@
 - Prof Office hours: Tuesdays 3:00 - 4:00 pm (A2-187)
 - TA Pffice horus: Sundays 12:00 - 12:40 pm (A2-187)
 
+
 ###Books
 	1. Interactive Computer Graphics (Horses)
 	1. Fundamentals of Computer Graphics (Tiger)
@@ -17,6 +18,7 @@
 	- 40% Assignments (weekly, theory and coding)
 	- 30% Midterm (Oct. 17)
 	- 30% Finals
+
 
 ###Topics
 1. Math

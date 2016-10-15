@@ -4,6 +4,98 @@
 		"selected_items":
 		[
 			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"text-dec",
+				"text-decoration"
+			],
+			[
+				"MAX",
+				"MAX_M"
+			],
+			[
+				"MA",
+				"MAX_M"
+			],
+			[
+				"ve",
+				"vec4"
+			],
+			[
+				"SPE",
+				"SPEED"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"zo",
+				"zoomSlider\t(?)"
+			],
+			[
+				"l",
+				"log(number)"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"MAX_",
+				"MAX_M"
+			],
+			[
+				"off",
+				"offsetY"
+			],
+			[
+				"can",
+				"canvasEvent\t(?)"
+			],
+			[
+				"vp",
+				"viewport\t[]"
+			],
+			[
+				"del",
+				"deltaY\t(?)"
+			],
+			[
+				"dl",
+				"deltaY\t(num)"
+			],
+			[
+				"offs",
+				"offsetX"
+			],
+			[
+				"if",
+				"if\tJS - if"
+			],
+			[
+				"f",
+				"fori\tJS - For In loop"
+			],
+			[
+				"n",
+				"num_rectangles"
+			],
+			[
+				"num",
+				"num_rectangles\t(num)"
+			],
+			[
+				"buffer",
+				"bufferSubData\t(?)"
+			],
+			[
+				"M",
+				"MAX_RECTANGLES\t(num)"
+			],
+			[
 				"prod",
 				"production_rules\t{}"
 			],
@@ -34,10 +126,6 @@
 			[
 				"data",
 				"dataTypeOf"
-			],
-			[
-				"get",
-				"getElementById"
 			],
 			[
 				"class",
@@ -118,10 +206,6 @@
 			[
 				"e",
 				"center"
-			],
-			[
-				"f",
-				"flex-end"
 			],
 			[
 				"a",
@@ -356,10 +440,6 @@
 				"padding-bottom"
 			],
 			[
-				"n",
-				"unset"
-			],
-			[
 				"min",
 				"min-height"
 			],
@@ -434,109 +514,17 @@
 			[
 				"text-decoration",
 				"text-decoration-style"
-			],
-			[
-				"heig",
-				"height"
-			],
-			[
-				"column-",
-				"column-width"
-			],
-			[
-				"column",
-				"column-count"
-			],
-			[
-				"box-",
-				"box-sizing"
-			],
-			[
-				"gr",
-				"fluid-grid.css"
-			],
-			[
-				"pos-",
-				"pos-a\tposition: absolute;"
-			],
-			[
-				"rotat",
-				"rotateZ()"
-			],
-			[
-				"transf",
-				"transform"
-			],
-			[
-				"ini",
-				"Initialization/"
-			],
-			[
-				"trasn",
-				"transform"
-			],
-			[
-				"border-s",
-				"border-style"
-			],
-			[
-				"i",
-				"initial"
-			],
-			[
-				"w",
-				"w-a\twidth: auto;"
-			],
-			[
-				"bgcp",
-				"bgcp-cb\tbackground-clip: content-box;"
-			],
-			[
-				"res",
-				"ress.css"
-			],
-			[
-				"anim",
-				"anim-\tanimation: ${1:name} ${2:duration} ${3:timing-function} ${4:delay} ${5:iteration-count} ${6:direction} ${7:fill-mode};"
-			],
-			[
-				"trasf",
-				"transform"
-			],
-			[
-				"sk",
-				"skewY()"
-			],
-			[
-				"transform",
-				"transform"
-			],
-			[
-				"font",
-				"font-family"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "3000*10000/30",
+			"file": "/C/Users/Simon/Documents/Front-End-WebDev/DAY-11-0628/css/common.css",
 			"settings":
 			{
-				"buffer_size": 13,
-				"line_ending": "Windows",
-				"name": "3000*10000/30"
-			}
-		},
-		{
-			"contents": "/* Match every k-character snippet of the query_doc document\n\t among a collection of documents doc1, doc2, ....\n\n\t ./rkmatch snippet_size query_doc doc1 [doc2...]\n\n*/\n\n#include <stdio.h>\n#include <stdlib.h>\n#include <sys/types.h>\n#include <sys/stat.h>\n#include <unistd.h>\n#include <fcntl.h>\n#include <strings.h>\n#include <assert.h>\n#include <time.h>\n#include <ctype.h>\n#include <string.h>\n\n\n#include \"bloom.h\"\n\nenum algotype { SIMPLE = 0, RK, RKBATCH};\n\n/* a large prime for RK hash (BIG_PRIME*256 does not overflow)*/\nlong long BIG_PRIME = 5003943032159437; \n\n/* constants used for printing debug information */\nconst int PRINT_RK_HASH = 5;\nconst int PRINT_BLOOM_BITS = 160;\n\n/* modulo addition */\nlong long\nmadd(long long a, long long b)\n{\n\treturn ((a+b)>BIG_PRIME?(a+b-BIG_PRIME):(a+b));\n}\n\n/* modulo substraction */\nlong long\nmdel(long long a, long long b)\n{\n\treturn ((a>b)?(a-b):(a+BIG_PRIME-b));\n}\n\n/* modulo multiplication*/\nlong long\nmmul(long long a, long long b)\n{\n\treturn ((a*b) % BIG_PRIME);\n}\n\n/* read the entire content of the file 'fname' into a \n\t character array allocated by this procedure.\n\t Upon return, *doc contains the address of the character array\n\t *doc_len contains the length of the array\n\t */\nvoid\nread_file(const char *fname, char **doc, int *doc_len) \n{\n\tstruct stat st;\n\tint fd;\n\tint n = 0;\n\n\tfd = open(fname, O_RDONLY);\n\tif (fd < 0) {\n\t\tperror(\"read_file: open \");\n\t\texit(1);\n\t}\n\n\tif (fstat(fd, &st) != 0) {\n\t\tperror(\"read_file: fstat \");\n\t\texit(1);\n\t}\n\n\t*doc = (char *)malloc(st.st_size);\n\tif (!(*doc)) {\n\t\tfprintf(stderr, \" failed to allocate %d bytes. No memory\\n\", (int)st.st_size);\n\t\texit(1);\n\t}\n\n\tn = read(fd, *doc, st.st_size);\n\tif (n < 0) {\n\t\tperror(\"read_file: read \");\n\t\texit(1);\n\t}else if (n != st.st_size) {\n\t\tfprintf(stderr,\"read_file: short read!\\n\");\n\t\texit(1);\n\t}\n\t\n\tclose(fd);\n\t*doc_len = n;\n}\n\n\n/* The normalize procedure examines a character array of size len \n\t in ONE PASS and does the following:\n\t 1) turn all upper case letters into lower case ones\n\t 2) turn any white-space character into a space character and, \n\t    shrink any n>1 consecutive spaces into exactly 1 space only\n\t\t\tHint: use C library function isspace() \n\t You must do the normalization IN PLACE so that when the procedure\n\t returns, the character array buf contains the normalized string and \n\t the return value is the length of the normalized string.\n*/\n\nint normalize(char *buf,\t/* The character array containing the string to be normalized*/\n\t\t\t\t\tint len\t\t\t/* the size of the original character array */)\n{\n  int flag = 0;\n\tchar *current=buf;\n\tchar *checker=buf;\n\tint firstCharIsLetter; // Checks wheather the first character is a letter\n\tif (isspace(buf[0]))\n\t\tfirstCharIsLetter = 0;\n\telse\n\t\tfirstCharIsLetter = 1;\n\tint index = 0; //Keeps track of the number of iterations\n\tint length = len; //length of the char array, needed so that I can change the len variable in the while loop\t\n\twhile(index<length){\n\t\t\n\t\t/* Convert to lowercase*/\n\t\tif(isupper(*checker)){\n\t\t\t*checker=tolower(*checker);\n\t\t}\n\n\t\t/* Check whether it starts with a whitespace character*/\n\t\tif (index==0){\n\t\t\tif (!firstCharIsLetter){\n\t\t\t  while((isspace(*checker))&&(index<length)){\n\t\t\t\t\tchecker++;\n\t\t\t\t\tlen--;\t\n\t\t\t\t\tindex++;\n\n\t\t\t\t}\n\t\t\t  *current = tolower(*checker);\n\t\t\t\tfirstCharIsLetter=1;\n\t\t\t\tcurrent++;\n\t\t\t\tchecker++;\t\n\t\t\t\tindex++;\n\t\t\t}else{\n\t\t\t  index++;\n\t\t\t  checker++;\n\t\t\t  current++;\n\t\t\t}\n\t\t}else{\n\t\t  \n\t\t\t/* Check whether it starts find the space the whitespace character*/\t\n\t\t\tif(isspace(*checker)){\n\t\t\t\tindex++;\n\t\t\t\tif(isspace(*(checker++))){\t\n\t\t\t\t\t*(current++)=' ';\n\t\t\t\t\twhile((isspace(*checker))&&(index<length)){\n\t\t\t\t\t  \n\t\t\t\t\t  checker++;\n\t\t\t\t\t  len--;\t\n\t\t\t\t\t  index++;\n\t\t\t\t\t        \n\t\t\t\t\t\t\n\t\t\t\t\t}\n\t\t\t\t\t*current =tolower(*checker);\n\t\t\t\t\tcurrent++;\n\t\t\t\t\tchecker++;\n\t\t\t\t\tindex++;\n\t\t\t\t\tif(flag==1)\n\t\t\t\t\t  break;\n\t\t\t\t}\n\t\t\t\n\t\t\t}\n\t\t\telse{\n\t\t\t  *current = tolower(*checker);\n\t\t\t\tcurrent++;\n\t\t\t\tchecker++;\n\t\t\t\tindex++;\n\t\t\t}\n\t\t\t\t\n\t\t}\n\t}\n\tif(buf[len-1]==' ')\n\t\tlen--;\n\n\treturn len;\n\n}\n\n/* check if a query string ps (of length k) appears \n\t in ts (of length n) as a substring \n\t If so, return 1. Else return 0\n\t You may want to use the library function strncmp\n\t */\nint\nsimple_match(const char *ps,\t/* the query string */\n\t\t\t\t\t\t int k, \t\t\t\t\t/* the length of the query string */\n\t\t\t\t\t\t const char *ts,\t/* the document string (Y) */ \n\t\t\t\t\t\t int n\t\t\t\t\t\t/* the length of the document Y */)\n{\n  for(int i=0; i<n; i++){\n    if (strncmp(ts, ps, k)==0)\n      return 1;\n    ts++;\n  }\n\t\n  return 0;\n}\n\n/* Check if a query string ps (of length k) appears \n\t in ts (of length n) as a substring using the rabin-karp algorithm\n\t If so, return 1. Else return 0\n\t In addition, print the first 'PRINT_RK_HASH' hash values of ts\n\t Example:\n\t $ ./rkmatch -t 1 -k 20 X Y\n\t 605818861882592 812687061542252 1113263531943837 1168659952685767 4992125708617222 \n\t 0.01 matched: 1 out of 148\n\t */\n\nint\nrabin_karp_match(const char *ps,\t/* the query string */\n\t\t\t\t\t\t\t\t int k, \t\t\t\t\t/* the length of the query string */\n\t\t\t\t\t\t\t\t const char *ts,\t/* the document string (Y) */ \n\t\t\t\t\t\t\t\t int n\t\t\t\t\t\t/* the length of the document Y */ )\n{\n  long long int val=0; //The variable that stores computed hash values\n  long long int power=1; //The variable that is used to compute power\n  long long int hashForQuerry; //Hash value for query string\n  long long int hashForString; //Hash value for document\n  long long int headOfHashed; // keeps the value of 256^(k)\n  int innerK=k; //used to compute the power\n  int charInInt;\n \n  \n  for(int i = 0; i < k; i++){\n    power=1;\n    for(int j = 1; j < (innerK); innerK--){ //Computes 256^(innerK), where innerK depends on i\n      power=mmul(256,power);\n\t  \n    }\n    charInInt = ps[i];\n    //printf(\"Char: %d\\n\", charInInt);\n\t//printf(\"Power: %lld\\n\", power);\n\t//printf(\"Val: %lld\\n\", val);\n    val=madd(val,mmul(power,charInInt));  //updates the value as i gets incremented, val+= ps[i]*power\n    //printf(\"Val: %lld\\n\", val);\n    //printf(\"%lld\", val);\n    innerK=k-i-1;\n  }\n\n  hashForQuerry = val;\n  //printf(\"hashForQuerry is %lld\\n\", hashForQuerry );\n  innerK=k;\n  val = 0;\n      int new_line = 0;\n\n  for(int i=0; i<n-k; i++){\n    if (i==0){\n      for(int j=0; j<k; j++){ //Computes hash valuie for each of the n-k pieces of the document\n\tpower=1;\n        for(int f = 1; f < (innerK); innerK--){\n\t  power=mmul(256,power);   //Computes 256^(innerK), where innerK depends on j\n\t\t\t\n        }\n\tif(j==0){\n\t  headOfHashed=power; //Keps track of 256^(innerK)\n\t}              \n\tcharInInt = ts[j];\n\t\t/*printf(\"CharXO: %d\\n\", charInInt);\n\t\tprintf(\"PowerXO: %lld\\n\", power);\n\t\tprintf(\"HEEEAAADDXO: %lld\\n\", headOfHashed);\n\t\tprintf(\"ValXO: %lld\\n\", val);*/\n\tval=madd(val,mmul(power,charInInt));\n\tinnerK=k-j-1;\n\t\t//printf(\"Val: %lld\\n\", val);\n\t\n      }\n      hashForString = val;\n      //printf(\"hashForString is %lld\\n\", hashForString );\n    }\n    else{          // Computes the rolling hashing, for all except the first parts of the document Y\n      val = 0;\n      charInInt = ts[i];\n      //printf(\"ts[i]: %d\\n\", charInInt);\n      //printf(\"HEAD OF HASHED: %lld\\n\", headOfHashed);\n      val = mmul(headOfHashed,ts[i-1]); \n      //printf(\"After mul of head with ts[i]: %lld\\n\", val);\n      val = mdel(hashForString, val);\n      //printf(\"hashForString is %lld\\n\", hashForString );\n      val = mmul(256,val);\n      charInInt = ts[i+k-1];\n      //printf(\"ts[i+k]: %d\\n\", charInInt);\n      val = madd(val,charInInt);\n      hashForString = val;\n      \n    }\n    //Prints the hash values\n    if(i<5)\n      printf(\"%lld \", hashForString);\n    if(i==5){\n      printf(\"\\n\");\n      new_line = 1;\n    }\n    \n    if(hashForQuerry==hashForString){\n      //printf(\"its a match\\n\");\n\t\tif(strncmp((ts+i),ps, k)==0){\n\t\t  //printf(\"its a TOOOTAL match\\n\");\n\t\t  if (new_line == 0)\n\t\t    printf(\"\\n\");\n\t\t  return 1;\n\t\t}\n    }\n    else{\n      //printf(\"NOT A MATCH\\n\");\n    }\n    \n  }\n  \n  return 0;\n}\n\n/* Initialize the bitmap for the bloom filter using bloom_init().\n\t Insert all m/k RK hashes of qs into the bloom filter using bloom_add().\n\t Then, compute each of the n-k+1 RK hashes of ts and check if it's in the filter using bloom_query().\n\t Use the given procedure, hash_i(i, p), to compute the i-th bloom filter hash value for the RK value p.\n\n\t Return the number of matched chunks. \n\t Additionally, print out the first PRINT_BLOOM_BITS of the bloom filter using the given bloom_print \n\t after inserting m/k substrings from qs.\n*/\n\n\n\nint\nrabin_karp_batchmatch(int bsz,        /* size of bitmap (in bits) to be used */\n                      int k,          /* chunk length to be matched */\n                      const char *qs, /* query docoument (X)*/\n                      int m,          /* query document length */ \n                      const char *ts, /* to-be-matched document (Y) */\n                      int n           /* to-be-matched document length*/)\n\n{\n  long long int val=0; //The variable that stores computed hash values\n  long long int power=1; //The variable that is used to compute power\n  long long int hashForQuerry; //Hash value for query string\n  long long int hashForString; //Hash value for document\n  long long int headOfHashed; // keeps the value of 256^(k)\n  int innerK=k; //used to compute the power\n  int charInInt;\n\n  bloom_filter Bloom = bloom_init(bsz);\n  int query_res;\n  int num_of_matches=0;\n\n  printf(\"%d %d %d\", m, k , innerK);\n  for(int f=0; f<m; f+=k){\n    //printf(\"\\nk: %d \", k);\n    for(int i = 0; i < k; i++){\n      //printf(\"InnerK: %d \", innerK);\n      power=1;\n      for(int j = 1; j < (innerK); innerK--){ //Computes 256^(innerK), where innerK depends on i\n\tpower=mmul(256,power);\n\t  \n      }\n      charInInt = qs[f+i];\n      //printf(\"Char: %d\\n\", charInInt);\n      //printf(\"Power: %lld\\n\", power);\n      //printf(\"Val: %lld\\n\", val);\n      val=madd(val,mmul(power,charInInt));  //updates the value as i gets incremented, val+= ps[i]*power\n      //printf(\"Val: %lld\\n\", val);\n      //printf(\"%lld\", val);\n      innerK=k-i-1;\n    }\n\n    hashForQuerry = val;\n    //printf(\"hashForQuerry is %lld\\n\", hashForQuerry );\n    bloom_add(Bloom, hashForQuerry);\n  }\n  bloom_print(Bloom, PRINT_BLOOM_BITS);\n\n  innerK=k;\n  val = 0;\n  int new_line = 0;\n\n  for(int i=0; i<n-k; i++){\n    if (i==0){\n      for(int j=0; j<k; j++){ //Computes hash value for each of the n-k pieces of the document\n\tpower=1;\n        for(int f = 1; f < (innerK); innerK--){\n\t  power=mmul(256,power);   //Computes 256^(innerK), where innerK depends on j\n\t\t\t\n        }\n\tif(j==0){\n\t  headOfHashed=power; //Keps track of 256^(innerK)\n\t}              \n\tcharInInt = ts[j];\n\t\t/*printf(\"CharXO: %d\\n\", charInInt);\n\t\tprintf(\"PowerXO: %lld\\n\", power);\n\t\tprintf(\"HEEEAAADDXO: %lld\\n\", headOfHashed);\n\t\tprintf(\"ValXO: %lld\\n\", val);*/\n\tval=madd(val,mmul(power,charInInt));\n\tinnerK=k-j-1;\n\t\t//printf(\"Val: %lld\\n\", val);\n\t\n      }\n      //hashForString = val;\n      //printf(\"hashForString is %lld\\n\", hashForString );\n    }\n    else{          // Computes the rolling hashing, for all except the first parts of the document Y\n      val = 0;\n      charInInt = ts[i];\n      //printf(\"ts[i]: %d\\n\", charInInt);\n      //printf(\"HEAD OF HASHED: %lld\\n\", headOfHashed);\n      val = mmul(headOfHashed,ts[i-1]); \n      //printf(\"After mul of head with ts[i]: %lld\\n\", val);\n      val = mdel(hashForString, val);\n      //printf(\"hashForString is %lld\\n\", hashForString );\n      val = mmul(256,val);\n      charInInt = ts[i+k-1];\n      //printf(\"ts[i+k]: %d\\n\", charInInt);\n      val = madd(val,charInInt);\n      //hashForString = val;\n      \n    }\n    hashForString = val;\n    \n    query_res = bloom_query(Bloom, hashForString);\n    if(query_res){\n      for(int index=0; index<m; index+=k){\n\tif(strncmp((qs+index), ts+i, k)==0)\n\t  num_of_matches +=1;\n      }\n    }\n    \n    \n  }\n  \n  return num_of_matches;\n}\n  \n\nint \nmain(int argc, char **argv)\n{\n \n\tint k = 100; /* default match size is 100*/\n\tint which_algo = SIMPLE; /* default match algorithm is simple */\n\n\tchar *qdoc, *doc; \n\tint qdoc_len, doc_len;\n\tint i;\n\tint num_matched = 0;\n\tint to_be_matched;\n\tint c;\n\n\t/* Refuse to run on platform with a different size for long long*/\n\tassert(sizeof(long long) == 8);\n\n\t/*getopt is a C library function to parse command line options */\n\twhile (( c = getopt(argc, argv, \"t:k:q:\")) != -1) {\n\t\tswitch (c) \n\t\t{\n\t\t\tcase 't':\n\t\t\t\t/*optarg is a global variable set by getopt() \n\t\t\t\t\tit now points to the text following the '-t' */\n\t\t\t\twhich_algo = atoi(optarg);\n\t\t\t\tbreak;\n\t\t\tcase 'k':\n\t\t\t\tk = atoi(optarg);\n\t\t\t\tbreak;\n\t\t\tcase 'q':\n\t\t\t\tBIG_PRIME = atoi(optarg);\n\t\t\t\tbreak;\n\t\t\tdefault:\n\t\t\t\tfprintf(stderr,\n\t\t\t\t\t\t\"Valid options are: -t <algo type> -k <match size> -q <prime modulus>\\n\");\n\t\t\t\texit(1);\n\t\t\t}\n\t}\n\n\t/* optind is a global variable set by getopt() \n\t\t it now contains the index of the first argv-element \n\t\t that is not an option*/\n\tif (argc - optind < 1) {\n\t\tprintf(\"Usage: ./rkmatch query_doc doc\\n\");\n\t\texit(1);\n\t}\n\n\t/*argv[optind] contains the query_doc argument */\n\n\t/*for(int i=0; i<qdoc_len; i++){\n\t  printf(\"%c\", qdoc[i]);\n\t}\n\tprintf(\"\\n\\n\\n\");*/\n\n\t\n\tread_file(argv[optind], &qdoc, &qdoc_len);\n\tqdoc_len = normalize(qdoc, qdoc_len);\n\n\t/*for(int i=0; i<qdoc_len; i++){\n\t  printf(\"%c\", qdoc[i]);\n\t}\n\tprintf(\"\\n\\n\\n\");*/\n        \n\t/* argv[optind+1] contains the doc argument */\n\tread_file(argv[optind+1], &doc, &doc_len);\n\tdoc_len = normalize(doc, doc_len);\n\n\t\n\tswitch (which_algo) \n\t\t{\n\t\t\tcase SIMPLE:\n\t\t\t\t/* for each of the qdoc_len/k chunks of qdoc, \n\t\t\t\t\t check if it appears in doc as a substring*/\n\t\t\t  \n\t\t\t\tfor (i = 0; (i+k) <= qdoc_len; i += k) {\n\t\t\t\t\tif (simple_match(qdoc+i, k, doc, doc_len)) {\n\t\t\t\t\t\tnum_matched++;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t\tcase RK:\n\t\t\t\t/* for each of the qdoc_len/k chunks of qdoc, \n\t\t\t\t\t check if it appears in doc as a substring using \n\t\t\t\t   the rabin-karp substring matching algorithm */\n\t\t\t\tfor (i = 0; (i+k) <= qdoc_len; i += k) {\n\t\t\t\t\tif (rabin_karp_match(qdoc+i, k, doc, doc_len)) {\n\t\t\t\t\t\tnum_matched++;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\tbreak;\n\t\t\tcase RKBATCH:\n\t\t\t\t/* match all qdoc_len/k chunks simultaneously (in batch) by using a bloom filter*/\n\t\t\t\tnum_matched = rabin_karp_batchmatch(((qdoc_len*10/k)>>3)<<3, k, qdoc, qdoc_len, doc, doc_len);\n\t\t\t\tbreak;\n\t\t\tdefault :\n\t\t\t\tfprintf(stderr,\"Wrong algorithm type, choose from 0 1 2\\n\");\n\t\t\t\texit(1);\n\t\t}\n\t\n\tto_be_matched = qdoc_len / k;\n\tprintf(\"%.2f matched: %d out of %d\\n\", (double)num_matched/to_be_matched, \n\t\t\tnum_matched, to_be_matched);\n\n\tfree(qdoc);\n\tfree(doc);\n\n\treturn 0;\n}\n",
-			"file": "/C/Users/Simon/Downloads/rkmatch.txt",
-			"file_size": 14436,
-			"file_write_time": 131191264781703603,
-			"settings":
-			{
-				"buffer_size": 14437,
-				"line_ending": "Unix"
+				"buffer_size": 372,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -620,16 +608,116 @@
 		"selected_items":
 		[
 			[
-				"set c",
-				"Set Syntax: C"
+				"",
+				"Anaconda: Show error list"
+			],
+			[
+				"setting",
+				"Preferences: Settings"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"origam",
+				"Origami: Create Pane Below"
+			],
+			[
+				"colorp",
+				"Color Picker"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"markdown",
+				"Markdown Slideshow"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"package",
+				"Package Control: Disable Package"
+			],
+			[
+				"key",
+				"Preferences: Key Bindings"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"key bin",
+				"Preferences: Key Bindings"
 			],
 			[
 				"dupli",
 				"File: Duplicate"
 			],
 			[
-				"renam",
-				"File: Rename"
+				"isntall",
+				"Package Control: Install Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"FindKeyConflicts: All Conflicts"
+			],
+			[
+				"set javasc",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"disable",
+				"Package Control: Disable Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"keyb",
+				"Preferences: Key Bindings"
+			],
+			[
+				"sett",
+				"Preferences: Settings"
+			],
+			[
+				"set c",
+				"Set Syntax: C"
 			],
 			[
 				"dele",
@@ -648,10 +736,6 @@
 				"Set Syntax: Markdown"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
 				"tab",
 				"Indentation: Convert to Tabs"
 			],
@@ -662,10 +746,6 @@
 			[
 				"key bind",
 				"Preferences: Alignment Key Bindings – User"
-			],
-			[
-				"move",
-				"File: Move"
 			],
 			[
 				"rename",
@@ -740,10 +820,6 @@
 				"FindKeyConflicts: All Key Maps to Quick Panel"
 			],
 			[
-				"enable",
-				"Package Control: Enable Package"
-			],
-			[
 				"key c",
 				"Keymaps: Cheat Sheet"
 			],
@@ -758,10 +834,6 @@
 			[
 				"KEYMAP",
 				"Keymaps: Find a keymap for..."
-			],
-			[
-				"disable",
-				"Package Control: Disable Package"
 			],
 			[
 				"find",
@@ -788,10 +860,6 @@
 				"Indentation: Convert to Tabs"
 			],
 			[
-				"instal",
-				"Package Control: Install Package"
-			],
-			[
 				"preview",
 				"Markdown Preview: Preview in Browser"
 			],
@@ -816,10 +884,6 @@
 				"SublimeREPL: Python - RUN current file"
 			],
 			[
-				"",
-				"Build With: C++ Single File"
-			],
-			[
 				"set pytho",
 				"Set Syntax: Python"
 			],
@@ -830,10 +894,6 @@
 			[
 				"pyth",
 				"Set Syntax: Python"
-			],
-			[
-				"key bin",
-				"Preferences: SublimeInput Key Bindings – User"
 			],
 			[
 				"convert",
@@ -872,10 +932,6 @@
 				"DocBlockr: Decorate line comment"
 			],
 			[
-				"markdown",
-				"Set Syntax: MultiMarkdown"
-			],
-			[
 				"remove",
 				"Package Control: Remove Package"
 			],
@@ -890,10 +946,6 @@
 			[
 				"satisf",
 				"Package Control: Satisfy Dependencies"
-			],
-			[
-				"set javasc",
-				"Set Syntax: JavaScript"
 			],
 			[
 				"sort ",
@@ -930,10 +982,6 @@
 			[
 				"convert tab",
 				"Indentation: Convert to Tabs"
-			],
-			[
-				"key",
-				"Preferences: Key Bindings - User"
 			],
 			[
 				"set markd",
@@ -978,10 +1026,6 @@
 			[
 				"markdwon",
 				"Markdown Preview: Preview in Browser"
-			],
-			[
-				"remov",
-				"Package Control: Remove Package"
 			],
 			[
 				"previ",
@@ -1074,62 +1118,6 @@
 			[
 				"key ",
 				"HTMLPrettify: Set Keyboard Shortcuts"
-			],
-			[
-				"produc",
-				"File: Open In Browser - Production Server"
-			],
-			[
-				"produ",
-				"File: Open In Browser - Production Server"
-			],
-			[
-				"picker",
-				"Color Picker"
-			],
-			[
-				"new fil",
-				"File: New File Relative to Current View"
-			],
-			[
-				"colorpi",
-				"Color Picker"
-			],
-			[
-				"intall",
-				"Package Control: Install Package"
-			],
-			[
-				"keyb",
-				"Preferences: Key Bindings - User"
-			],
-			[
-				"disabl",
-				"Package Control: Disable Package"
-			],
-			[
-				"word r",
-				"Word Wrap: Toggle"
-			],
-			[
-				"bindin",
-				"Preferences: Key Bindings - Default"
-			],
-			[
-				"lorem",
-				"Snippet: Lorem ipsum"
-			],
-			[
-				"title",
-				"Convert Case: Title Case"
-			],
-			[
-				"pretti",
-				"HTMLPrettify"
-			],
-			[
-				"toggle li",
-				"SublimeLinter: Toggle Linter"
 			]
 		],
 		"width": 510.0
@@ -1162,25 +1150,73 @@
 	"expanded_folders":
 	[
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 1",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common",
-		"/C/Users/Simon/Documents/Front-End-WebDev"
+		"/C/Users/Simon/Documents/Front-End-WebDev",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-11-0628",
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-11-0628/css"
 	],
 	"file_history":
 	[
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Assignments/Assignment_4_Simon/Assignment/HW 4/hw4_mandelbrot.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Assignments/Assignment_4_Simon/Assignment/HW 4/hw4_julia.html",
+		"/C/Users/Simon/Downloads/rkmatch_29.c",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Systems Organization/Lab 1 - RKlab/rklab-handout/rkmatch.c",
+		"/C/Users/Simon/Desktop/Assignment_4_Simon/Assignment/HW 4/hw4_mandelbrot_julia.html",
+		"/C/Users/Simon/Documents/GitHub/Git-Practice/README.md",
+		"/C/Users/Simon/Documents/GitHub/Git-Practice/example.html",
+		"/C/Users/Simon/Documents/GitHub/Git-Practice/index.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 4/hw4_mandelbrot_julia_animated.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 4/hw4_mandelbrot_julia_animated.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/example.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/index.html",
+		"/C/Users/Simon/Documents/GitHub/Test-repo/hello_world.py",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/Anaconda/Anaconda.sublime-settings",
+		"/C/Users/Simon/Documents/SSEL/.gitignore",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 1, 2 catchup.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/adf.markdown",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/adf.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 4/hw4_mandelbrot_julia.html",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/MarkdownPreview.sublime-settings",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/README.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 4/hw4_mandelbrot_julia.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 3/hw3_interaction.html",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/Events.html",
+		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/TernJS/TernJS.sublime-settings",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Freshman/Introduction to Computer Science CS-AD 101-004/connectfour.py",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 3/hw3_interaction.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 3/hw3_interaction_.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 9 0928.md",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 2/hw2_cube.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/SS.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/MV.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/KochCurve/KochCurve.js",
+		"/C/Users/Simon/Desktop/Code/Common/MV.js",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 8 0926.md",
+		"/C/Users/Simon/Documents/SSEL/Local VM/redwood-2.2-ubuntu-14.04/2.2/note.md",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e929aa636aa82/bomb.c",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e92a3b638e0db/bomb.assembly",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e92f9664dcdf8/phase_4",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e92fd164eb55b/bomb.assembly",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Systems Organization/Lab 2 - bomblab/Simon/README",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Systems Organization/Lab 2 - bomblab/Simon/bomb.c",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e92fbd64e674a/bomb.string_mem",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e92f4c64cacd9/bomb.strings",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e92f2a64c2847/bomb.assembly",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e9278c62e6543/tester.c",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e9274962d5faa/rkmatch.c",
+		"/C/Users/Simon/AppData/Local/Temp/BNZ.57e91fd76104a69/rkmatch.c",
+		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 1/hw1_koch_curve.js",
 		"/C/Users/Simon/Downloads/rkmatch.txt",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 2/hw2_cube.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/HW 2/hw2_L-Systems.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems.js",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/SS.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems_v2.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_L-Systems_v3.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_cube.html",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Assignment/hw2_cube.js",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Common/MV.js",
 		"/C/Users/Simon/Downloads/Pyramid.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 5 0914.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 7 0921.md",
@@ -1210,10 +1246,8 @@
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Basic/DrawTriangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/Jterm/jterm.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 3 0905.md",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Notes/Day 1, 2 catchup.md",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/DrawTriangle.js",
 		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/Code/Current/DrawTriangle.html",
-		"/E/Users/hp/Desktop/In Progress/NYUAD Sophomore/_Computer Graphics/README.md",
 		"/C/Users/Simon/Downloads/rklab-handout/rktest.py",
 		"/C/Users/Simon/Downloads/Computer Graphics/Code/Common/README.txt",
 		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
@@ -1249,55 +1283,7 @@
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-48-0826/js/storage.js",
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/README.md",
 		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax-random-users.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/random-users.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/DAY-48-0826/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/DAY-48-0826/storage.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/DAY-48-0826/js/storage.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/ajax.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/random-users.json",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data.xml",
-		"/E/Users/hp/Desktop/In Progress/GIT/Workshops/WebAPI_weather/script.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax-xml.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/ajax_tabs.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax_tabs.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/js/ajax-comm.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data.txt",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_1.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_2.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_3.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/data/data_4.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/data/data.txt",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/data/data.json",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/ajax.xml",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825/data/data.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/button.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/css.js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/css.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/demo.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/test2.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819 jQuery/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/test.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/demo2.html",
-		"/C/Users/Simon/Desktop/test.js",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/repl.js",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/Regular Expressions/RegExp.sublime-syntax",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/Default.sublime-commands",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/config/NodeJS/Main.sublime-menu",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/Emmet.sublime-settings",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/User/ColorPicker.sublime-settings",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
-		"/C/Users/Simon/AppData/Roaming/Sublime Text 3/Packages/ColorHelper/color_helper.sublime-settings",
-		"/C/Users/Simon/Documents/Front-End-WebDev/dfas.html",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-46-0822/jquery-study.html",
-		"/C/Users/Simon/Downloads/detectizr.js",
-		"/C/Users/Simon/Downloads/modernizr-custom.js",
-		"/C/Users/Simon/Downloads/modernizr-custom (2).js",
-		"/C/Users/Simon/Downloads/modernizr-custom (3).js",
-		"/C/Users/Simon/Downloads/modernizr-custom (1).js",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-43-0817/README.md",
-		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-45-0819/jquery.html"
+		"/C/Users/Simon/Documents/Front-End-WebDev/DAY-47-0825 AJAX/random-users.html"
 	],
 	"find":
 	{
@@ -1330,6 +1316,72 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"rn",
+			"@print",
+			" (.gitignore)",
+			"inverse",
+			"10",
+			"hard",
+			"indent",
+			"sourcetree",
+			"//",
+			"ctrl+",
+			"default",
+			"MAX_N",
+			"]",
+			"0",
+			"zoom",
+			"log",
+			"ol",
+			"sqrt",
+			"height",
+			"x-slider",
+			"MAX_M",
+			"MAX_N",
+			"request",
+			";",
+			"vec2",
+			"client",
+			"clientX",
+			"zn.y",
+			"zn.x",
+			"x",
+			"tempx",
+			"offsetY",
+			"offsetX",
+			"canvasEvent",
+			"e.",
+			"]",
+			"0",
+			"deltaY",
+			"deltaX",
+			";",
+			"viewport[0],",
+			"0",
+			"100",
+			"i",
+			"zn[1]",
+			"zn[0]",
+			"x",
+			"condition",
+			"Systems",
+			"MAX_RECTANGLES",
+			"indices",
+			"inserting",
+			"null",
+			"window",
+			"Position",
+			"didem",
+			"vPosition",
+			"pointIdx",
+			"y",
+			"x",
+			"Mouse",
+			"mouse",
+			"mouseX",
+			"//",
+			"8048c88",
+			"\n",
 			"char",
 			"len",
 			"rule",
@@ -1391,73 +1443,7 @@
 			"R",
 			"slider",
 			"Slider",
-			"text",
-			"slider",
-			"mult",
-			"mmultult",
-			"//",
-			"addeventlistener",
-			"evt",
-			"(e)",
-			"log",
-			"apache2",
-			"redwood-rout",
-			"gopath",
-			"-",
-			"[1]",
-			"[0]",
-			"rotate",
-			"recursiveKoch",
-			"console.l",
-			"output_array",
-			"arr",
-			"output_arr",
-			"array",
-			"arr",
-			"i",
-			"\t\n",
-			"console.lo",
-			"t",
-			"ytmp",
-			"xtmp",
-			"midpoint",
-			"x",
-			"number",
-			"step",
-			"x0",
-			"x",
-			"context",
-			"sin",
-			"but",
-			"Ut",
-			"ut",
-			"vertex",
-			"Unspecified",
-			"started",
-			"colors",
-			"vpositi",
-			":",
-			"On ",
-			"on",
-			"On",
-			"]",
-			"\t",
-			"glsl",
-			"JS",
-			"request",
-			"log",
-			"_argumentsToArray",
-			"test_com",
-			"open",
-			"file",
-			"gl_Position",
-			"x",
-			"canvas",
-			"viewport",
-			"//",
-			"log",
-			"//",
-			"6"
+			"text"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1504,96 +1490,33 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"semi_transient": false,
+					"file": "/C/Users/Simon/Documents/Front-End-WebDev/DAY-11-0628/css/common.css",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 13,
+						"buffer_size": 372,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								13,
-								13
+								284,
+								284
 							]
 						],
 						"settings":
 						{
-							"auto_name": "3000*10000/30",
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.scan":
-							{
-								"current_ext": null,
-								"current_syntax": "Text/Plain text",
-								"enabled": false,
-								"last_updated": 1474652936.96
-							},
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/Users/Simon/Downloads/rkmatch.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 14437,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6257,
-								6257
-							]
-						],
-						"settings":
-						{
-							"WordCount":
-							{
-								"changes": 0,
-								"count": 1285,
-								"modified": false,
-								"selection": false,
-								"status": -1,
-								"syntax": "plain text"
-							},
-							"color_helper.box_height": 18,
-							"color_helper.color_scheme": "Packages/User/SublimeLinter/Material Flatland (SL).tmTheme",
-							"color_helper.file_palette":
-							[
-							],
-							"color_helper.preview_meta":
-							{
-							},
-							"color_helper.scan":
-							{
-								"current_ext": ".txt",
-								"current_syntax": "C++ Starting Kit/C",
-								"enabled": false,
-								"last_updated": 1474796190.12
-							},
-							"syntax": "Packages/C++ Starting Kit/C.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 5816.0,
+						"translation.y": 151.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -1604,7 +1527,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 73.0
 	},
 	"input":
 	{
@@ -1653,7 +1576,7 @@
 	"project": "CG_project.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 66.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -1949,7 +1872,7 @@
 		[
 			[
 				"",
-				"E:\\Users\\hp\\Desktop\\In Progress\\NYUAD Sophomore\\_Computer Systems Organization\\cso.sublime-project"
+				"C:\\Users\\Simon\\Documents\\SSEL\\SSEL.sublime-project"
 			]
 		],
 		"width": 380.0
