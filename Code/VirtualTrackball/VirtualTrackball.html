@@ -4,9 +4,10 @@
 
 <title>Virtual Trackball</title>
 
-<script type="text/javascript" src="../../Common/webgl-utils.js"></script>
-<script type="text/javascript" src="../../Common/initShaders.js"></script>
-<script type="text/javascript" src="../../Common/MV.js"></script>
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="../Common/Trackball.js"></script>
 <script type="text/javascript" src="VirtualTrackball.js"></script> 
 
 <script id="vertex-shader" type="x-shader/x-vertex">
@@ -14,14 +15,12 @@ attribute vec4 vPosition;
 attribute vec4 vColor;
 varying vec4 fColor;
 
-uniform mat4 vtM;
-uniform float vtScale;
+uniform mat4 M;
 
 void main(){
        fColor = vColor;
-       vec4 v = vtM*vPosition;
-	   v = vec4(vtScale*v.xyz,1.0); // scale
-       v.z = -v.z; // compensate for left handed coordinate system used by WebGL
+       vec4 v = M*vPosition;
+	   v.z = -v.z; // compensate for left handed coordinate system used by WebGL
        gl_Position = v;
 }
 </script>
@@ -34,12 +33,10 @@ void main(){
 }
 </script>
 </head>
-
 <body>
    <canvas id="gl-canvas" width="512" height="512">
     HTML5 Canvas not supported!
    </canvas>
-   <img src="Problem_2.png" alt="Problem_2 guideline" width="902" height="497">
 </body>
 </html>
 

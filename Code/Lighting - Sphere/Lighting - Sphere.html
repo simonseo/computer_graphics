@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Lighting - Sphere</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="../Common/Trackball.js"></script>
+<script type="text/javascript" src="../Common/Camera.js"></script>
+<script type="text/javascript" src="../Common/Object.js"></script>
+<script type="text/javascript" src="../Common/Utils.js"></script>
+<script type="text/javascript" src="Lighting - Sphere.js"></script> 
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+precision highp float;
+
+attribute vec4 vPosition;
+attribute vec3 vNormal;
+
+uniform mat4 M, VP;
+uniform mat3 NT;
+uniform vec3 Ka, Kd, Ks, Ia, Id, Is, lightPosition, cameraPosition;
+uniform float shininess, shading;
+
+varying vec4 fColor;
+varying vec3 fNormal, fPosition;
+
+vec4 computeColor(vec3 position, vec3 normal) {
+      // we are doing lighting in world coordinate frame
+
+      vec3 lightDir = normalize(lightPosition - position);
+      vec3 viewDir = normalize(cameraPosition - position);
+
+      vec3 ambient = Ia*Ka ;
+      vec3 diffuse = Id*Kd* max(0.0, dot(normal, lightDir));
+
+      vec3 halfVector = normalize(lightDir + viewDir);
+      vec3 specular = Is*Ks* pow( max(dot(halfVector, normal), 0.0), shininess);
+
+      vec3 color = ambient + diffuse + specular;
+            
+      return vec4(color, 1.0);
+}
+
+
+void main(){
+
+	vec4 wPos = M*vPosition; // world position
+
+	vec4 v = VP*wPos;   
+	v.z = -v.z; // compensate for left handed coordinate system used by WebGL
+	gl_Position = v;
+
+	fPosition = wPos.xyz;
+
+	vec3 normal;
+	
+	// normalization is required in the code below 
+	// as there might be scaling in the transformations.
+
+	if(shading == 1.0){ // Flat
+	 normal = normalize(NT*vNormal);
+	}
+	else { // Gouraud or Phong
+	 normal = normalize(NT*vPosition.xyz);
+	}
+
+	if(shading==3.0){ // Phong
+		fNormal = normal;
+	}
+	else{ // Flat or Gouraud
+		fColor = computeColor(fPosition, normal);  
+	} 
+}
+
+
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision highp float;
+
+uniform vec3 Ka, Kd, Ks, Ia, Id, Is, lightPosition, cameraPosition;
+uniform float shininess, shading;
+
+varying vec4 fColor;
+varying vec3 fPosition, fNormal;
+
+vec4 computeColor(vec3 position, vec3 normal) {
+	// we are doing lighting in world coordinate frame
+
+	vec3 lightDir = normalize(lightPosition - position);
+	vec3 viewDir = normalize(cameraPosition - position);
+
+	vec3 ambient = Ia*Ka ;
+	vec3 diffuse = Id*Kd* max(0.0, dot(normal, lightDir));
+
+	vec3 halfVector = normalize(lightDir + viewDir);
+	vec3 specular = Is*Ks* pow( max(dot(halfVector, normal), 0.0), shininess);
+
+	vec3 color = ambient + diffuse + specular;
+
+	return vec4(color, 1.0);
+}
+
+
+void main(){
+	if(shading == 3.0){ // Phong
+		gl_FragColor = computeColor(fPosition, normalize(fNormal));
+	}
+	else{
+		gl_FragColor =  fColor;
+	}
+}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512">
+    HTML5 Canvas not supported!
+   </canvas>
+</body>
+</html>
+

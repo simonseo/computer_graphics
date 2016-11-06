@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Virtual Trackball and Camera</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="../Common/Trackball.js"></script>
+<script type="text/javascript" src="../Common/Camera.js"></script>
+<script type="text/javascript" src="VirtualTrackballAndCamera.js"></script> 
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 fColor;
+
+uniform mat4 MVP; //Model-View-Projection matrix
+
+void main(){
+       fColor = vColor;
+       vec4 v = MVP*vPosition;
+       v.z = -v.z; // compensate for left handed coordinate system used by WebGL
+       gl_Position = v;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 fColor;
+void main(){
+    gl_FragColor = fColor;
+}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512" tabindex="1">
+    HTML5 Canvas not supported!
+   </canvas>
+</body>
+</html>
+

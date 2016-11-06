@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" > 
+
+<title>Mandelbrot and Julia Sets</title>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+precision highp float; // use high precision
+
+attribute vec4 vPosition;
+varying vec2 position;
+
+void main(){
+    position = vPosition.xy;
+	gl_Position = vPosition;
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision highp float; // use high precision
+
+varying vec2 position;
+
+const int N = 500;
+
+uniform vec2 origin;
+uniform float s;
+
+void main(){
+    vec2 pos = s*position + origin;
+
+    float a, b, x, y, tmp; 
+    vec2 z, c;
+
+    z = vec2(0.0, 0.0); c = pos;         // Mandelbrot Set
+    //z = pos; c = vec2(0.37, -0.283);   // The rest are Julia Sets
+    //z = pos; c = vec2(-0.8, -0.175);
+    //z = pos; c = vec2(-0.5, 0.62); 
+    //z = pos; c = vec2(0.18, -0.57);
+    //z = pos; c = vec2(0.39, -0.23);
+    //z = pos; c = vec2(0.2, -0.55);
+    //z = pos; c = vec2(-0.8, -0.181);
+
+    
+    gl_FragColor = vec4(0.1, 0.4, 0.8, 1.0); 
+
+    x = z.x; y = z.y; a = c.x; b = c.y;
+
+    for(int i = 0; i<N; i++){
+
+        if(x*x + y*y > 4.0) {
+            float s = 5.0*float(i)/float(N);
+            gl_FragColor = vec4(0.2*s+0.4*s*s,s*s,s, 1.0);
+            break;
+        }
+
+        tmp = x*x - y*y + a;
+        y = 2.0*x*y + b;
+        x = tmp;
+    }     
+}
+</script>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="Mandelbrot.js"></script>
+</head>
+
+<body>
+<canvas id="gl-canvas" width="1024" height="1024">
+  HTML5 Canvas not supported!
+</canvas>
+</body>
+</html>
+

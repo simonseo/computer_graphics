@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Rotation about a line through origin</title>
+
+<script type="text/javascript" src="../Common/webgl-utils.js"></script>
+<script type="text/javascript" src="../Common/initShaders.js"></script>
+<script type="text/javascript" src="../Common/MV.js"></script>
+<script type="text/javascript" src="RotationAboutAnAxis.js"></script> 
+
+Vx: <input type="number" id="vx" value=1> </input><br>
+Vy: <input type="number" id="vy" value=0> </input><br>
+Vz: <input type="number" id="vz" value=0> </input><br>
+Angle: <input type = "range" id ="angle"  min=-360 max=360 step=1></input>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+attribute vec4 vPosition;
+attribute vec4 vColor;
+varying vec4 fColor;
+
+uniform mat4 M;
+uniform int ID;
+
+void main(){
+       fColor = vColor;
+       if(ID == 1){
+        gl_Position = M*vPosition;
+       }
+       else{
+        gl_Position = vPosition;
+       }
+}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+varying vec4 fColor;
+void main(){
+    gl_FragColor = fColor;
+}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512">
+    HTML5 Canvas not supported!
+   </canvas>
+</body>
+</html>
+
