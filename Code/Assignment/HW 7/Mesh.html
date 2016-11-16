@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" > 
+
+<title>Draw Square</title>
+</head>
+<body>
+<canvas id="gl-canvas" width="512" height="512" tabindex="1">
+  HTML5 Canvas not supported!
+</canvas>
+
+
+<script src="../../Common/webgl-utils.js"></script>
+<script src="../../Common/initShaders.js"></script>
+<script src="../../Common/MV.js"></script>
+<script src="../../Common/Trackball.js"></script>
+<script src="../../Common/Camera.js"></script>
+<script src="../../Common/SS.js"></script>
+<script src="../../Common/Object.js"></script>
+<script src="../../Common/Utils.js"></script>
+<script src="Mesh.js"></script>
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+precision highp float;
+
+attribute vec4 vPosition;
+attribute vec4 vNormal;
+attribute vec4 vColor;
+varying vec4 fColor;
+varying vec4 fNormal;
+uniform float t;
+uniform mat4 MVP; //Model-View-Projection matrix
+void main(){
+	float x = vPosition.x;
+	float y = vPosition.y;
+	float z = cos(x + y + t);
+	vec4 v = vec4(x, y, z, 1.0); //calculated coordinates
+
+    //Model View Projection transformation
+	// v = MVP*v;
+    v.z = -v.z; // compensate for left handed coordinate system used by WebGL
+    gl_Position = v;
+
+	fColor = vec4(1.0, 1.0, 1.0, 1.0);
+	fNormal = vNormal;
+}
+
+
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+precision mediump float;
+
+varying vec4 fColor;
+varying vec4 fNormal;
+void main(){
+    gl_FragColor = fColor;
+
+}
+</script>
+</body>
+</html>
+

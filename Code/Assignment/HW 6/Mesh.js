@@ -25,15 +25,21 @@ window.onload = function init(){
     gl.useProgram( program );
     
     // Set up buffers and attributes
-	var s = 2.0; //side length
+	var s = 4.2; //side length
 	var n = 15; //grid size
 
 
 	//Create vertices
 	var vertices = [];
+	var count = 0;
 	for (var i = 0; i < n+1; i++) {
 		for (var j = 0; j < n+1; j++) {
-			vertices.push(vec2(-s/2+j*s/n, s/2-i*s/n));
+			var x = -s/2+j*s/n;
+			var y = s/2-i*s/n;
+			var r = Math.sqrt(x*x + y*y);
+			var z = Math.sin(100.0*r)/(5.0*r);
+			// var z = x + y;
+			vertices.push(vec3(x, y, z));
 		}
 	}
 	console.log(vertices);
@@ -41,11 +47,11 @@ window.onload = function init(){
 	//Create indices
 	var indices = [];
 	var quad = function (a,b,c,d){
-		indices.push(a,b,c,a,c,d);
+		indices.push(a,c,b,a,d,c);
 	}
 	for (var i = 0; i < n; i++) { 
 		for (var j = 0; j < n; j++) {
-			var x = i + (n + 1) * j
+			var x = i + (n + 1) * j;
 			quad(x, x+1, x+n+2, x+n+1);
 		}
 	}
@@ -57,7 +63,7 @@ window.onload = function init(){
 	gl.bufferData(gl.ARRAY_BUFFER, flatten(vertices), gl.STATIC_DRAW);
 
 	var vPosition = gl.getAttribLocation(program, "vPosition");
-	gl.vertexAttribPointer(vPosition, 2, gl.FLOAT, false, 0, 0);
+	gl.vertexAttribPointer(vPosition, 3, gl.FLOAT, false, 0, 0);
 	gl.enableVertexAttribArray(vPosition);	
 	
 	// set up index buffer

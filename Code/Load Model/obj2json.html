@@ -1,0 +1,159 @@
+<html>
+
+<head>
+<script>
+
+window.onload = function() {
+
+    function handleObj(e) {
+  
+		var reader = new FileReader();
+		
+		reader.onload = function (ev) {
+                jsobj(ev.target.result);
+        }
+		
+		reader.readAsText(e.target.files[0]);
+    }
+
+    var objFile = document.getElementById("objFile");
+    objFile.addEventListener('change', handleObj, false);
+}
+
+
+function jsobj(obj) {
+    /*
+     The arrays v,t, and n are for storing the vertex positions,
+     texture coordinates and normal information temporarily.
+     Every distinct combination of indices corresponds to a new 
+     entry in the arrays used in the model object. Since indices 
+     in the obj file start from 1 instead of 0, we put a dummy 
+     entry "-1" at position 0 in the arrays v,t and n.
+    */
+
+    var name  = document.getElementById("nameText").value;
+
+    var v  = [-1];  // vertex position array
+    var t  = [-1];  // vertex texture coordinate array
+    var n  = [-1];  // vertex normal array
+
+    var m  = {};    // vertex triplet map
+
+    var model = {
+        positions : [],
+        texCoords : [],
+        normals   : [],
+        triangles : [],
+    };
+
+
+    // This stringify function is used in lieu of JSON.stringify in order to
+    // take control over linebreaks in the short arrays representing vectors.
+
+    function stringify() {
+
+        function stringifyTable(name, a) {
+            if (a.length > 0) {
+                string += '\t' + name + ' : [\n';
+
+                for (var i = 0; i < a.length; i++) {
+                    string += '\t\t['   + a[i].join(', ') +   '],\n';
+                }
+             
+                string += '\t],\n';
+            }
+        }
+
+        var string  = 'var ' + name + ' = {\n';
+
+        stringifyTable('positions', model.positions);
+        stringifyTable('texCoords', model.texCoords);
+        stringifyTable('normals',   model.normals);
+        stringifyTable('triangles', model.triangles);
+
+        string += '}\n';
+
+        return string;
+    }
+
+    // findIndex returns a vertex index for the given triplet string.
+    // The argument f is a string like 1/4/2, 7//3 etc
+
+    function findIndex(f) {
+
+        if (m[f] == undefined) {
+            
+            m[f] = model.positions.length;
+
+            var a = f.split('/');
+            var i = parseFloat(a[0]);
+            var j = parseFloat(a[1]);
+            var k = parseFloat(a[2]);
+
+            // take care of negative references 
+            if(i<0){i += v.length; }
+            if(j<0){j += t.length; }
+            if(k<0){k += n.length; }
+
+            if(i) { model.positions.push(v[i]); }
+            if(j) { model.texCoords.push(t[j]); }
+            if(k) { model.normals.push(n[k]);   }
+
+        }
+        
+        return m[f];
+    }
+
+    // Create a new triangle for the given set of triplet strings.
+
+    function newTriangle(a, b, c) {
+       var i = findIndex(a);
+       var j = findIndex(b);
+       var k = findIndex(c);
+
+        model.triangles.push([i,j,k]);
+    }
+
+    var line = obj.split('\n');
+
+    for (var i = 0; i < line.length; i++) {
+        token = line[i].trim().split(/\s+/);
+
+        var tag = token[0];
+        var t1 = parseFloat(token[1]);
+        var t2 = parseFloat(token[2]);
+        var t3 = parseFloat(token[3]);
+
+        if (tag == 'v') { v.push([t1,t2,t3]); }
+        else if (tag == 'vt') { t.push([t1,t2]); }
+        else if (tag == 'vn') { n.push([t1,t2,t3]); }
+        else if (tag == 'f') {
+            for (var j = 2; j < token.length - 1; j++) {
+                newTriangle(token[1], token[j], token[j + 1]); //triangle fan
+            }
+        }
+    }
+
+    var url  = 'data:text/json;charset=utf8,' + encodeURIComponent(stringify());
+
+    window.open(url, '_blank');
+    window.focus();
+}
+
+</script>
+</head>
+
+<body>
+    <h1>OBJ to JSON</h1>
+    <fieldset>
+        <label>Object name:</label>
+        <input id="nameText" type="text" value="obj">
+        <br><br>
+
+        <label>obj file:</label>
+        <input type="file" id="objFile">
+        <br><br>
+    </fieldset>
+</body>
+
+</html>
