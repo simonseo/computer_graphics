@@ -1,0 +1,226 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"> 
+
+<title>Load Model</title>
+
+<script type="text/javascript" src="../../common/webgl-utils.js"></script>
+<script type="text/javascript" src="../../common/initShaders.js"></script>
+<script type="text/javascript" src="../../common/MV.js"></script>
+<script type="text/javascript" src="../../common/Trackball.js"></script>
+<script type="text/javascript" src="../../common/Camera.js"></script>
+<script type="text/javascript" src="../../common/Object.js"></script>
+<script type="text/javascript" src="../../common/Utils.js"></script>
+<script type="text/javascript" src="teapot.js"></script> 
+<script type="text/javascript" src="grid_heights1.js"></script> 
+<script type="text/javascript" src="NormalMapping.js"></script> 
+
+
+<script id="vertex-shader" type="x-shader/x-vertex">
+	precision highp float;
+
+	attribute vec4 vPosition;
+	attribute vec3 vNormal,vTangent,vBitangent;
+	attribute vec2 vTexCoord;
+
+	uniform mat4 M, TB, VP;
+	uniform mat3 TBNT;
+	uniform float cube, terrain;
+	uniform mat4 cameraProjection;
+	uniform sampler2D textureSampler, normalMapSampler, heightMapSampler;
+	uniform int usingHeightMap;
+
+	varying vec3 R;
+	varying vec4 v;
+	varying vec3 fNormal, fPosition, fTangent, fBitangent;
+	varying vec2 fTexCoord;
+
+	float calcZ(float x, float y) {
+	  // Code for the bell-shaped object
+	  if (x == 0.0 && y == 0.0) {
+	    return 1.0;
+	  } else {
+	    float r;
+	    r = sqrt(pow(x, 2.0) + pow(y, 2.0));
+	    return(sin(20.0 * r)/(20.0 * r));
+	  }
+	}
+
+	vec3 computeNormal(float x, float y) {
+	  float delta = 0.001;
+	  float n1, n2;
+	  n1 = (calcZ(x+delta, y) - calcZ(x, y))/delta;
+	  n2 = (calcZ(x, y+delta) - calcZ(x, y))/delta;
+	  return normalize(vec3(-n1,-n2, 1.0));
+	}
+
+	void main(){
+
+		vec4 wPos = TB*M*vPosition; // world position
+
+		v = VP*wPos;
+
+		if (terrain == 1.0) {
+			if (usingHeightMap == 1) {
+				v.z = texture2D(heightMapSampler, vTexCoord).r;
+			} else {
+				v.z = 0.0;
+			}
+		}
+
+		// v.z = calcZ(v.x, v.y);
+		v.z = -v.z; // compensate for left handed coordinate system used by WebGL
+		gl_Position = v;
+
+		//Compute normal
+		vec3 normal = computeNormal(v.x, v.y);
+		fNormal = TBNT*normal;
+
+		vec3 N = normalize(fNormal);
+		vec3 u = v.xyz;
+		R = reflect(u, N);
+
+		fPosition = wPos.xyz;
+
+		fNormal = vNormal;
+		fTangent = vTangent;
+		fBitangent = vBitangent;
+
+		fTexCoord = vTexCoord;
+	}
+</script>
+
+<script id="fragment-shader" type="x-shader/x-fragment">
+	precision highp float;
+
+	uniform vec3 Ka, Kd, Ks, Ia, Id, Is, lightPosition, cameraPosition;
+	uniform float shininess;
+	uniform float cube, terrain, teapot;
+	uniform int usingDiffuseMap, usingNormalMap;
+	uniform sampler2D diffuseMapSampler, normalMapSampler, heightMapSampler;
+	uniform mat3 N, TBN;
+	uniform mat4 VP, VIP;
+	uniform samplerCube texMap;
+
+
+	varying vec3 R;
+	varying vec4 fColor, v;
+	varying vec3 fNormal, fPosition, fTangent, fBitangent;
+	varying vec2 fTexCoord;
+	vec3 kd;
+	vec4 reflectedColor;
+
+	vec4 computeColor(vec3 position, vec3 normal) {
+		// we are doing lighting in world coordinate frame
+
+		vec3 lightDir = normalize(lightPosition - position);
+		vec3 viewDir = normalize(cameraPosition - position);
+
+		vec3 ambient = Ia*Ka;
+		
+		vec3 diffuse = Id*kd* max(0.0, dot(normal, lightDir));
+		
+		vec3 halfVector = normalize(lightDir + viewDir);
+		vec3 specular = Is*Ks* pow( max(dot(halfVector, normal), 0.0), shininess);
+
+		vec3 color = ambient + diffuse + specular;
+
+		return vec4(color, 1.0);
+	}
+
+	//Takes reflection vector of magnitude 1 and returns texture coordinate projection in 2D
+	vec2 computeTexture(vec4 reflection) {
+		float x = reflection.x;
+		float y = reflection.y;
+		float z = reflection.z;
+		vec2 texCoord;
+		int dir = 0; //direction is x if dir=2, y if 1, z if 0
+		float absx = abs(x);
+		float absy = abs(y);
+		float absz = abs(z);
+		if (absx >= absy && absx >= absz ) {
+			y /= abs(x);
+			z /= abs(x);
+			if (x >= 0.0) {
+				texCoord = vec2(5.0/8.0 - z/8.0, 1.0/2.0 + y/6.0);
+			}
+			else {
+				texCoord = vec2(1.0/8.0 + z/8.0, 1.0/2.0 + y/6.0);
+			}
+		}
+		else if (absy >= absx && absy >= absz ) {
+			z /= abs(y);
+			x /= abs(y);
+			if (y >= 0.0) {
+				texCoord = vec2(3.0/8.0 + x/8.0, 5.0/6.0 - z/6.0);
+			}
+			else {
+				texCoord = vec2(3.0/8.0 + x/8.0, 1.0/6.0 + z/6.0);
+			}
+		}
+		else if (absz >= absx && absz >= absy ) {
+			x /= abs(z);
+			y /= abs(z);
+			if (z <= 0.0) {
+				texCoord = vec2(7.0/8.0 - x/8.0, 1.0/2.0 + y/6.0);
+			}
+			else {
+				texCoord = vec2(3.0/8.0 + x/8.0, 1.0/2.0 + y/6.0);
+			}
+		}
+		return texCoord;
+	}
+
+	void main(){
+		vec3 normal;
+
+		if (cube == 1.0) {
+			gl_FragColor = texture2D(diffuseMapSampler, fTexCoord);
+		} else {
+			if (teapot == 1.0) {
+				vec4 RR;
+				RR.x = R.x;
+				RR.y = R.y;
+				RR.z = R.z;
+				vec4 reflection = VIP*RR;
+				reflectedColor = texture2D(diffuseMapSampler, computeTexture(normalize(reflection)));
+			}
+			if(usingDiffuseMap == 1){
+				kd = texture2D(diffuseMapSampler, fTexCoord/10.0).rgb;
+			}
+			else{
+				kd = Kd;
+			}
+
+			if(usingNormalMap == 1){
+				vec3 c = texture2D(normalMapSampler, fTexCoord/10.0).rgb;
+				c = 2.0*c - vec3(1.0,1.0,1.0);
+				normal = c.r*fTangent + c.g*fBitangent+ c.b*fNormal;
+			}
+			else{
+				normal = fNormal;
+			}
+
+			normal = normalize(TBN*N*normal);
+			vec4 computedColor = computeColor(fPosition, normal);
+
+			if (teapot == 1.0) {
+				// weighted sum
+				gl_FragColor = (0.3 * computedColor + 0.7 * reflectedColor);
+			} else {
+				gl_FragColor = computedColor;
+			}
+		}
+	}
+</script>
+</head>
+<body>
+   <canvas id="gl-canvas" width="512" height="512">
+    HTML5 Canvas not supported!
+   </canvas>
+</body>
+</html>
+
+<!-- m - # of cells in the grid per row
+m - # texture tiles that fit completely
+coords = (i,j) = m/n(i,j) -->
